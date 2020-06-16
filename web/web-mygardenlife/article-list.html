@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <title>花草遊戲‧台灣好園藝 - 台灣最大園藝知識分享社群平台</title>
+    
+
+
+    
+    <!-- object-fit For IE -->
+    <script src="js/objectfit.js"></script> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="css/rd-navbar.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    
+
+</head>
+
+<body>
+
+    <!--========================================================
+                              LOADING
+    =========================================================-->
+    <div class="preloader">
+        <div class="status">
+            <svg class="spinner" width="45px" height="45px" viewBox="0 0 66 66">
+               <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
+        </div>
+    </div>
+
+
+
+
+
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header class="page-header text-center" data-type="anchor">
+        <!-- RD Navbar -->
+        <div class="rd-navbar-wrap">
+            <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-sm-stick-up-offset="50px" data-lg-stick-up-offset="150px" class="rd-navbar">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel -->
+                    <div class="rd-navbar-panel">
+                        <div class="rd-navbar-panel-canvas"></div>
+
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+
+                        <!-- RD Navbar Brand -->
+                        <div class="rd-navbar-brand">
+                            <a href="index.html" class="brand-name">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+
+                        <!-- RD Navbar Search -->
+                        <div class="rd-navbar-search hidden-xs">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rd-navbar-outer">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-subpanel">
+                            <div class="rd-navbar-nav-wrap">
+                                <!-- RD Navbar Nav -->
+                                <ul class="rd-navbar-nav">
+                                    <li>
+                                        <a href="channel-index.html">花草知識庫</a>
+
+                                        <!-- RD Navbar Dropdown -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">新手入門</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">病蟲害診療</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">繁殖栽培訣竅</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">澆水施肥修剪</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">疑難雜症區</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">自己種菜吃</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">種菜不失敗</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">種菜好地方</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">好菜大推薦</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">多肉小世界</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">種多肉不失敗</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">多肉品種推薦</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">多肉小佈置</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">花草樂生活</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">庭園綠設計</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">花草達人</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">綠色小旅行</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">花生活佈置</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">好園藝TV</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">生活花佈置</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">種植秘訣</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">花生活Newes</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">生態趣知識</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">人文與植物</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- RD Navbar Search Toggle -->
+                            <div class="rd-navbar-search-wrap hidden-md hidden-lg">
+                                <button class="btn rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar, .rd-navbar-inner">
+                                    <span></span>
+                                </button>
+                                <div class="rd-navbar-search">
+                                    <form action="" method="post">
+                                        <div class="form-group">
+                                            <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    
+
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <h1 class="hide">花草遊戲‧台灣好園藝 - 台灣最大園藝知識分享社群平台</h1>
+
+
+
+
+
+        <!-- 新手入門1 -->
+        <section>
+            <div class="container">
+
+                <div class="row">
+                     <!-- 麵包屑 -->
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#">首頁</a>
+                        </li>
+                        <li>
+                            <a href="#">自己種菜吃</a>
+                        </li>
+                        <li class="active">種菜不失敗</li>
+                    </ol>
+
+                    <div class="box-article box-list box-top-list">
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="article-content.html">
+                                <img class="img-responsive" src="img/article-1.jpg" alt="">
+                                <span>NEW</span>
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="article-content.html">養生芳療！運用精油舒緩鼻子過敏、感冒初期不適！</a></h3>
+                            <p class="item-txt hidden-xs">當鼻子過敏，或是發生感冒的症狀，如：咳嗽、打噴嚏、鼻塞，可以使用能提高「肺」功能的精油，利用吸嗅法來調整身體內外的「.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="tv-content.html">
+                                <img class="img-responsive" src="img/article-2.jpg" alt="">
+                                <span>NEW</span>
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="tv-content.html">種豆芽超簡單，５天就收成</a></h3>
+                            <p class="item-txt hidden-xs">綠豆，是每個人國小都種過的平民豆類，可是想栽培出美味的綠豆芽，卻需要一些些小技巧，可都是學校沒教的事喔！</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="article-content.html">
+                                <img class="img-responsive" src="img/article-3.jpg" alt="">
+                                <span>NEW</span>
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="article-content.html">用生命在授粉──吊桶蘭跟蘭花蜜蜂共同演化</a></h3>
+                            <p class="item-txt hidden-xs">特殊蘭屬植物的花朵幾乎都特化成「陷阱」，以確保蘭花蜜蜂來偷「香水」時，可以萬無一失地將花粉塊「偷渡」到蘭花蜜蜂背上.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4 hidden-md hidden-lg">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/ad-600x400-2.jpg" alt="">
+                            </a>
+                            <h3><a href="#">(只出現平版手機)廣告版位廣告版位</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 970x250 Ads -->
+                <div class="ads">
+                    <div id="" class="ad-img">
+                        <img class="img-responsive" src="img/ad-970x250-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+        <!-- 新手入門2 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="box-article box-list">
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="tv-content.html">
+                                <img class="img-responsive" src="img/article-4.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2019/07/19</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 637</p></div>
+                            </div>
+                            <h3><a href="tv-content.html">是誰吃了我的植物？植物醫生教你觀察與鑑定害蟲</a></h3>
+                            <p class="item-txt hidden-xs">當植物發生異常時，我們可以藉由「直接診斷」或「間接診斷」，來判斷是何種害蟲正在吃我們的植物，進而.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="article-content.html">
+                                <img class="img-responsive" src="img/article-5.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25946</p></div>
+                            </div>
+                            <h3><a href="article-content.html">種豆芽超簡單，5天就收成</a></h3>
+                            <p class="item-txt hidden-xs">綠豆，是每個人國小都種過的平民豆類，可是想栽培出美味的綠豆芽，卻需要一些些小技巧，可都是學校沒教.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="tv-content.html">
+                                <img class="img-responsive" src="img/article-6.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/07/31</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 118438</p></div>
+                            </div>
+                            <h3><a href="tv-content.html">新手必看！讓你秒懂多肉植物的四季照護和急救方式</a></h3>
+                            <p class="item-txt hidden-xs">看著心愛的多肉健康成長，心中也會有滿滿的成就感。但隨著氣候和環境的變化，園藝工作的內容也必須隨.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-7.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/08/19</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 8147</p></div>
+                            </div>
+                            <h3><a href="#">吃完蜜柚種子別丟，種出一片小森林</a></h3>
+                            <p class="item-txt hidden-xs">每到中秋，和家人朋友聚在一起賞月、烤肉、品柚，已成了全民運動！而香甜可口的蜜柚，是中秋品柚....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-8.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/05/07</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 8341</p></div>
+                            </div>
+                            <h3><a href="#">香料植物入菜有順序，你用對了嗎？</a></h3>
+                            <p class="item-txt hidden-xs">可以觀賞、可以入菜的香料植物，廣受大家喜愛。但香料植物入菜有順序，可以讓香料的香氣發揮得淋漓盡致，你用對了嗎？</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-9.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/04/30</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 4625</p></div>
+                            </div>
+                            <h3><a href="#">劉力學》播撒理想種子的臨海農場</a></h3>
+                            <p class="item-txt hidden-xs">從加拿大到台灣，從電腦公司高階主管到收ㄆㄨㄣ種菜，可能不少人會對劉力學的選擇感到不解，但看到他住家附近的蒼鬱草木.....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 970x250 Ads -->
+                <div class="ads">
+                    <div id="" class="ad-img">
+                        <img class="img-responsive" src="img/ad-970x250-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+
+        <!-- 新手入門3 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="box-article box-list">
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-10.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2018/10/19</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 2410</p></div>
+                            </div>
+                            <h3><a href="#">簡單擺就超有綠意感的觀葉植物</a></h3>
+                            <p class="item-txt hidden-xs">在空間較大的環境中，適合落地型大型植物伸展，或是邊桌上的中型盆栽擺放，簡單一、兩盆，馬上就有充滿綠意的舒適視覺效果。</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-11.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/06/12</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 9575</p></div>
+                            </div>
+                            <h3><a href="#">DIY玩佈置 打造禪風小花園</a></h3>
+                            <p class="item-txt hidden-xs">禪風花園雅緻清幽，看著看著，心情也跟著放鬆寧靜下來。在家中複製一個充滿禪味的角落並不難，.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-12.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/07/28</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 11487</p></div>
+                            </div>
+                            <h3><a href="#">夏天也適用！４步驟學會盆栽壓條法</a></h3>
+                            <p class="item-txt hidden-xs">想在炎熱的夏天繁殖新植株，有沒有什麼方法呢？這時必須使用壓條法，這是唯一即使在炎熱夏季也容易操作的繁殖法喔！.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-1.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="#">養生芳療！運用精油舒緩鼻子過敏、感冒初期不適！</a></h3>
+                            <p class="item-txt hidden-xs">當鼻子過敏，或是發生感冒的症狀，如：咳嗽、打噴嚏、鼻塞，可以使用能提高「肺」功能的精油，利用吸嗅法來調整身體內外的「.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-2.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="#">小巧可愛的迷你多肉花圈</a></h3>
+                            <p class="item-txt hidden-xs">整理花園時，不小心掉下來的多肉，與新生的小多肉要怎麼處理呢？拿出細鐵絲，將多肉寶寶修剪、纏繞之後，迷你可愛的多肉花圈.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-3.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="#">用生命在授粉──吊桶蘭跟蘭花蜜蜂共同演化</a></h3>
+                            <p class="item-txt hidden-xs">特殊蘭屬植物的花朵幾乎都特化成「陷阱」，以確保蘭花蜜蜂來偷「香水」時，可以萬無一失地將花粉塊「偷.....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 970x250 Ads -->
+                <div class="ads">
+                    <div id="" class="ad-img">
+                        <img class="img-responsive" src="img/ad-970x250-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+        <!-- 新手入門4 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="box-article box-list">
+
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-4.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2019/07/19</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 637</p></div>
+                            </div>
+                            <h3><a href="#">是誰吃了我的植物？植物醫生教你觀察與鑑定害蟲</a></h3>
+                            <p class="item-txt hidden-xs">當植物發生異常時，我們可以藉由「直接診斷」或「間接診斷」，來判斷是何種害蟲正在吃我們的植物，進而.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-5.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25946</p></div>
+                            </div>
+                            <h3><a href="#">種豆芽超簡單，5天就收成</a></h3>
+                            <p class="item-txt hidden-xs">綠豆，是每個人國小都種過的平民豆類，可是想栽培出美味的綠豆芽，卻需要一些些小技巧，可都是學校沒教.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-6.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/07/31</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 118438</p></div>
+                            </div>
+                            <h3><a href="#">新手必看！讓你秒懂多肉植物的四季照護和急救方式</a></h3>
+                            <p class="item-txt hidden-xs">看著心愛的多肉健康成長，心中也會有滿滿的成就感。但隨著氣候和環境的變化，園藝工作的內容也必須隨.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-7.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/08/19</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 8147</p></div>
+                            </div>
+                            <h3><a href="#">吃完蜜柚種子別丟，種出一片小森林</a></h3>
+                            <p class="item-txt hidden-xs">每到中秋，和家人朋友聚在一起賞月、烤肉、品柚，已成了全民運動！而香甜可口的蜜柚，是中秋品柚....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-8.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/05/07</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 8341</p></div>
+                            </div>
+                            <h3><a href="#">香料植物入菜有順序，你用對了嗎？</a></h3>
+                            <p class="item-txt hidden-xs">可以觀賞、可以入菜的香料植物，廣受大家喜愛。但香料植物入菜有順序，可以讓香料的香氣發揮得淋漓盡致，你用對了嗎？</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-9.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/04/30</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 4625</p></div>
+                            </div>
+                            <h3><a href="#">劉力學》播撒理想種子的臨海農場</a></h3>
+                            <p class="item-txt hidden-xs">從加拿大到台灣，從電腦公司高階主管到收ㄆㄨㄣ種菜，可能不少人會對劉力學的選擇感到不解，但看到他住家附近的蒼鬱草木.....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 970x250 Ads -->
+                <div class="ads">
+                    <div id="" class="ad-img">
+                        <img class="img-responsive" src="img/ad-970x250-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+
+        <!-- 新手入門5 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="box-article box-list">
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-1.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="#">養生芳療！運用精油舒緩鼻子過敏、感冒初期不適！</a></h3>
+                            <p class="item-txt hidden-xs">當鼻子過敏，或是發生感冒的症狀，如：咳嗽、打噴嚏、鼻塞，可以使用能提高「肺」功能的精油，利用吸嗅法來調整身體內外的「.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-2.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="#">小巧可愛的迷你多肉花圈</a></h3>
+                            <p class="item-txt hidden-xs">整理花園時，不小心掉下來的多肉，與新生的小多肉要怎麼處理呢？拿出細鐵絲，將多肉寶寶修剪、纏繞之後，迷你可愛的多肉花圈.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-3.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25768</p></div>
+                            </div>
+                            <h3><a href="#">用生命在授粉──吊桶蘭跟蘭花蜜蜂共同演化</a></h3>
+                            <p class="item-txt hidden-xs">特殊蘭屬植物的花朵幾乎都特化成「陷阱」，以確保蘭花蜜蜂來偷「香水」時，可以萬無一失地將花粉塊「偷.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-4.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2019/07/19</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 637</p></div>
+                            </div>
+                            <h3><a href="#">是誰吃了我的植物？植物醫生教你觀察與鑑定害蟲</a></h3>
+                            <p class="item-txt hidden-xs">當植物發生異常時，我們可以藉由「直接診斷」或「間接診斷」，來判斷是何種害蟲正在吃我們的植物，進而.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-5.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/11/29</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 25946</p></div>
+                            </div>
+                            <h3><a href="#">種豆芽超簡單，5天就收成</a></h3>
+                            <p class="item-txt hidden-xs">綠豆，是每個人國小都種過的平民豆類，可是想栽培出美味的綠豆芽，卻需要一些些小技巧，可都是學校沒教.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-6.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/07/31</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 118438</p></div>
+                            </div>
+                            <h3><a href="#">新手必看！讓你秒懂多肉植物的四季照護和急救方式</a></h3>
+                            <p class="item-txt hidden-xs">看著心愛的多肉健康成長，心中也會有滿滿的成就感。但隨著氣候和環境的變化，園藝工作的內容也必須隨.....</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 970x250 Ads -->
+                <div class="ads">
+                    <div id="" class="ad-img">
+                        <img class="img-responsive" src="img/ad-970x250-1.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- 新手入門6 -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="box-article box-list">
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-10.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2018/10/19</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 2410</p></div>
+                            </div>
+                            <h3><a href="#">簡單擺就超有綠意感的觀葉植物</a></h3>
+                            <p class="item-txt hidden-xs">在空間較大的環境中，適合落地型大型植物伸展，或是邊桌上的中型盆栽擺放，簡單一、兩盆，馬上就有充滿綠意的舒適視覺效果。</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-11.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/06/12</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 9575</p></div>
+                            </div>
+                            <h3><a href="#">DIY玩佈置 打造禪風小花園</a></h3>
+                            <p class="item-txt hidden-xs">禪風花園雅緻清幽，看著看著，心情也跟著放鬆寧靜下來。在家中複製一個充滿禪味的角落並不難，.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-12.jpg" alt="">
+                            </a>
+                            <div class="row box-issue hidden-xs">
+                                <div class="col-xs-6"><p class="issue-time">2015/07/28</p></div>
+                                <div class="col-xs-6 text-right"><p class="issue-view"><i class="fa fa-fw fa-eye"></i> 11487</p></div>
+                            </div>
+                            <h3><a href="#">夏天也適用！４步驟學會盆栽壓條法</a></h3>
+                            <p class="item-txt hidden-xs">想在炎熱的夏天繁殖新植株，有沒有什麼方法呢？這時必須使用壓條法，這是唯一即使在炎熱夏季也容易操作的繁殖法喔！.....</p>
+                        </div>
+                        <div class="col-xs-6 col-md-4 hidden-md hidden-lg">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/ad-600x400-2.jpg" alt="">
+                            </a>
+                            <h3><a href="#">(只出現平版手機)廣告版位廣告版位</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- 分頁 -->
+        <div class="page text-center">
+            <ul class="pagination pagination-sm">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="active"><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- 為您推薦 -->
+        <section class="item-txt recommend-item">
+            <div class="container">
+                <h2 class="title-word text-center">為您推薦</h2>
+                <div class="row">
+                    <div class="box-article box-list">
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-1.jpg" alt="">
+                            </a>
+                            <h3><a href="#">養生芳療！運用精油舒緩鼻子過敏、感冒初期不適！</a></h3>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-2.jpg" alt="">
+                            </a>
+                            <h3><a href="#">小巧可愛的迷你多肉花圈</a></h3>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/ad-600x400-3.jpg" alt="">
+                            </a>
+                            <h3><a href="#">廣告版位廣告版位</a></h3>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-3.jpg" alt="">
+                            </a>
+                            <h3><a href="#">用生命在授粉──吊桶蘭跟蘭花蜜蜂共同演化</a></h3>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-4.jpg" alt="">
+                            </a>
+                            <h3><a href="#">是誰吃了我的植物？植物醫生教你觀察與鑑定害蟲</a></h3>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-5.jpg" alt="">
+                            </a>
+                            <h3><a href="#">種豆芽超簡單，5天就收成</a></h3>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-6.jpg" alt="">
+                            </a>
+                            <h3><a href="#">新手必看！讓你秒懂多肉植物的四季照護和急救方式</a></h3>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/ad-600x400-4.jpg" alt="">
+                            </a>
+                            <h3><a href="#">廣告版位廣告版位</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="regulation.html">全站條款</a></li>
+                <li><a href="#">企業合作</a></li>
+            </ul>
+            <div class="btn-icon">
+                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>Copyright © 花草遊戲 台灣好園藝My Garden. All Rights Reserved.版權所有</p>
+        </div>
+    </footer>
+
+
+
+
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script> 
+    
+    <!-- Header JS -->
+    <script src="js/navbar/core.min.js"></script>
+    <script src="js/navbar/script.js"></script>
+
+    <!-- Loading JQ -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".status").fadeOut();
+            $(".preloader").delay(250).fadeOut("slow");
+        })
+    </script>
+
+</body>
+
+</html>
+

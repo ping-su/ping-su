@@ -1,0 +1,316 @@
+body {
+	font-family: Arial, "微軟正黑體", sans-serif;
+	font-size: 14.5px;
+}
+
+.bg {
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-position: top center;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+@media screen and (max-height: 859px) {
+	.bg {
+		min-height: 850px;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.bg {
+		height: auto;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+
+
+/*========== 活動首頁 ==========*/
+.navbar {
+    width: 100%;
+	color: #fff;
+    min-height: auto;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding-inline-start: 0;
+}
+.navbar ul li {
+    width: 0;
+    flex-basis: 25%;
+    list-style: none;
+    text-align: center;
+    padding: 8px 0;
+    background-color: #3c5233;
+}
+.navbar li:hover, .navbar li:focus, .navbar li:active, .navbar li.active {
+    background-color: #152614;
+}
+.navbar a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.navbar a:hover {
+	text-decoration: none;
+}
+.navbar ul li.active {
+    position: relative;
+}
+.navbar li.active::before {
+	content: "";
+	border-color: transparent transparent #152614 transparent;
+    border-style: solid solid solid solid; 
+    border-width: 12px 10px 12px 10px; 
+    width: 0;
+    height: 0;
+	position: absolute;
+	top: -24px;
+	left: 0;
+	right: 0;
+	margin: auto;
+
+}
+
+
+
+/*========== 活動首頁 ==========*/
+.event-index {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.topbanner {
+    width: 32vw;
+    margin-bottom: 25px;
+}
+.itembox {
+	width: 85%;
+	display: flex;
+	justify-content: space-around;
+}
+.item:first-child, .item:last-child {
+	margin-top: -15%;
+}
+.item a:hover img {
+	opacity: 0.9;
+}
+
+@media screen and (max-width: 1199px) {
+	.topbanner {
+    	width: 40vw;
+    	margin-top: 15px;
+	}
+	.itembox {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.itembox {
+		flex-wrap: wrap;
+		margin-bottom: 25px;
+	}
+	.item:first-child, .item:last-child {
+		margin-top: 0;
+	}
+	.item {
+		width: 0;
+		flex-basis: 50%;
+		margin-bottom: 25px;
+	}
+	.item a {
+	    display: block;
+	    width: 30vw;
+	    margin: auto;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	.event-index {
+		justify-content: flex-start;
+	}
+}	
+
+@media screen and (max-width: 699px) {	
+	.topbanner {
+    	width: 45vw;
+	}
+	.item a {
+	    width: 30vw;
+	}
+}
+
+@media screen and (max-width: 676px) {
+	.topbanner {
+    	width: 55vw;
+	}
+	.item a {
+	    width: 35vw;
+	}
+}
+
+@media screen and (max-width: 509px) {
+	.topbanner {
+    	width: 65vw;
+	}
+	.item a {
+	    width: 45vw;
+	}
+}
+
+
+
+/*========== 得獎公告 ==========*/
+.event-index-row {
+	flex-direction: row;
+	width: 80%;
+	margin: auto;
+}
+.event-index-row .topbanner { 
+	width: 0;
+	flex-basis: 35%;
+}
+.word {
+	flex-basis: 65%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 5px;
+	text-align: center;
+	padding: 20px 50px;
+	margin: 0 25px;
+}
+.word h2, .word p {
+	text-align: center;
+	margin-bottom: 25px;
+}
+.word h2 {
+	display: inline-block;
+	font-size: 24px;
+	color: #000;
+	font-weight: bold;
+	letter-spacing: 3px;
+	margin-bottom: 35px;
+	position: relative;
+}
+.word h2::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+}
+.word p {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 36px;
+}
+.word .red {
+	color: #800c0c;
+}
+.word li {
+	text-align: left;
+	line-height: 28px;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1299px) {
+	.event-index-row {
+		width: 100%;
+	}
+}		
+
+@media screen and (max-width: 999px) {
+	.event-index-row {
+		flex-wrap: wrap;
+	}
+	.event-index-row .topbanner{ 
+		flex-basis: 70%;
+		margin: 25px auto;
+	}
+	.word { 
+		flex-basis: 100%;
+		margin-bottom: 55px; 
+	}
+}
+
+
+
+/*========== 活動獎項 ==========*/
+.bg-gift {
+	height: auto;
+}
+.bg-gift .event-index-row {
+	align-items: flex-start;
+}
+.bg-gift .event-index-row .topbanner { 
+	margin-top: 17%;
+}
+.bg-gift .word {
+	margin: 25px 25px 55px; 
+}
+.gift {
+	display: flex;
+	flex-wrap: wrap;
+}
+.gift-item {
+	width: 0;
+	flex-basis: 50%;
+	margin-bottom: 25px;
+}
+.gift-item img {
+	width: 60%;
+}
+.gift-item h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+.gift-item p {
+	margin-bottom: 0;
+}
+.gift-item span {
+	line-height: 28px;
+}
+.where {
+	display: block;
+	border-top: 1px solid #000;
+	padding: 25px 0 15px;
+}
+.where h4 {
+	font-size: 16px;
+}
+.where p {
+	line-height: 24px;
+	margin-bottom: 8px;
+}
+.where p a {
+	font-size: 15px;
+	color: #333;
+}
+h5 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 999px) {
+	.gift-item {
+		flex-basis: 100%;
+	}
+	.bg-gift .event-index-row .topbanner { 
+		margin-top: 25px;
+	}
+}

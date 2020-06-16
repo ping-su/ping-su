@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <title>好食購 - 台灣好食材 Fooding</title>
+    <meta name="keyword" content="台灣好食材Fooding,有機在地食材,看食譜, 找食材,料理達人,農夫市集, 產地直送,農產品, 線上教學, 做菜料理影片,食材挑選,台灣食材好食曆" />
+    <meta name="description" content="從餐桌到產地，全台最大食材食譜社群平台，提供最豐富在地好食材資訊、分享食譜私房菜，利用食材做出健康美味養生食譜，分享幸福料理。現在就跟我們一起認識勤奮耕耘的小農、誠心經營的品牌、用心做料理的職人，用好食材做好料理，美味又健康！" />
+
+    <script type="text/javascript" src="new/common/js/header/jquery-3.js"></script>
+
+    <!-- object-fit For IE -->
+    <script src="new/common/js/objectfit.js"></script> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="new/common/css/bootstrap.min.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="new/common/css/slick/slick.css">
+    <link rel="stylesheet" href="new/common/css/slick/slick-theme.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="new/common/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Header/Footer CSS -->
+    <link rel="stylesheet" type="text/css" media="all" href="new/common/css/header.css">
+    <script type="text/javascript" src="new/common/js/header/header.js"></script>
+    <link rel="stylesheet" href="new/common/css/footer.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="new/common/css/style.css">
+    <link rel="stylesheet" href="new/shop/css/shop.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="wsmenucontainer clearfix">
+            <div id="overlapblackbg"></div>
+            <!-- Mobile-Topnav -->
+            <div class="wsmobileheader clearfix">
+                <a id="wsnavtoggle" class="animated-arrow">
+                    <span></span>
+                </a>
+                <a class="mobilelogo" href="fooding.html">
+                    <img src="images/new/common/logo.png" class="img-responsive" alt="台灣好食材">
+                </a>
+                <!-- Icon-購物車 -->
+                <a class="mobileicon shoppingicon" href="#">
+                    <span class="fas fa-shopping-cart"></span>
+                </a>
+                <!-- Icon-個人專區icon -->
+                <a class="mobileicon" href="#">
+                    <span class="fa fa-user"></span>
+                </a>
+            </div>
+            <!-- Desk-Topnav -->
+            <div class="headtoppart clearfix">
+                <div class="headerwp">
+                    <div class="topnav-logo">
+                        <a class="logo" href="fooding.html"><img src="images/new/common/logo.png" class="img-responsive" alt="台灣好食材"></a>
+                    </div>
+                    <div class="topnav-search">
+                        <form class="search">
+                            <input placeholder="搜尋全站食譜,文章,影片,商品...">
+                            <button class="btn-search"><i class="searchicon fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                        <ul class="search-key">
+                            <li><a href="#">低gi飲食</a></li>
+                            <li><a href="#">雞肉</a></li>
+                            <li><a href="#">超級食材</a></li>
+                            <li><a href="#">冬日茶飲</a></li>
+                            <li><a href="#">夯團購毛豆</a></li>
+                        </ul>
+                    </div>
+                    <div class="topnav-right">
+                        <a href="#"><i class="fas fa-pencil-alt"></i> 寫食譜</a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i> 購物車(0)</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="headerfull">
+                <div class="wsmain">
+                    <!-- Menu Start -->
+                    <nav class="wsmenu clearfix">
+                        <ul class="mobile-sub wsmenu-list">
+                            <!-- 好食購 -->
+                            <li>
+                                <a href="shop.html" class="navtext">好食購</a>
+                                <div class="megamenu clearfix">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">好食</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">新鮮蔬菜</a> </li>
+                                                    <li><a href="#">安心水果</a> </li>
+                                                    <li><a href="#">生鮮肉品</a> </li>
+                                                    <li><a href="#">水產海鮮</a> </li>
+                                                    <li><a href="#">蛋豆奶類</a> </li>
+                                                    <li><a href="#">糧麵乾貨</a> </li>
+                                                    <li><a href="#">堅果果乾</a> </li>
+                                                    <li><a href="#">調理即食</a> </li>
+                                                    <li><a href="#">果醬蜂蜜</a> </li>
+                                                    <li><a href="#">茶和咖啡</a> </li>
+                                                    <li><a href="#">零食點心</a> </li>
+                                                    <li><a href="#">保健/飲品</a> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">好物</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">飲食器</a> </li>
+                                                    <li><a href="#">鍋物</a> </li>
+                                                    <li><a href="#">廚房家電</a> </li>
+                                                    <li><a href="#">餐廚用具</a> </li>
+                                                    <li><a href="#">保鮮餐盒</a> </li>
+                                                    <li><a href="#">烘焙器具</a> </li>
+                                                    <li><a href="#">清潔用品</a> </li>
+                                                    <li><a href="#">保養用品</a> </li>
+                                                    <li><a href="#">綠生活</a> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">好禮</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">好食拌手禮</a> </li>
+                                                    <li><a href="#">好物拌手禮</a> </li>
+                                                </ul>
+                                                <!-- <div class="wstheading"><a href="#">好品牌</a></div> -->
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">推薦商品</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="images/new/common/800x400-2.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>超人氣蜂蜜檸檬2瓶免運中!</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 看食譜 -->
+                            <li>
+                                <a href="recipe-index.html" class="navtext">看食譜</a>
+                                <div class="megamenu clearfix">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">主要食材</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">蔬菜</a> </li>
+                                                    <li><a href="#">水果</a> </li>
+                                                    <li><a href="#">牛羊豬肉</a> </li>
+                                                    <li><a href="#">雞鴨鵝肉</a> </li>
+                                                    <li><a href="#">魚蝦海鮮</a> </li>
+                                                    <li><a href="#">米麵雜糧</a> </li>
+                                                    <li><a href="#">醃漬/加工品</a> </li>
+                                                    <li><a href="#">蛋/蛋製品</a> </li>
+                                                    <li><a href="#">奶類/奶製品</a> </li>
+                                                    <li><a href="#">豆腐/豆製品</a> </li>
+                                                    <li><a href="#">麵粉/烘焙用粉</a> </li>
+                                                    <li><a href="#">醬料/調味料</a> </li>
+                                                    <li><a href="#">飲品飲料</a> </li>
+                                                    <li><a href="#">糖類/果醬</a> </li>
+                                                    <li><a href="#">茶</a> </li>
+                                                    <li><a href="#">咖啡</a> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">食譜菜式</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">中式料理</a> </li>
+                                                    <li><a href="#">台式料理</a> </li>
+                                                    <li><a href="#">西式/異國料理</a> </li>
+                                                    <li><a href="#">日式料理</a> </li>
+                                                    <li><a href="#">韓式料理</a> </li>
+                                                    <li><a href="#">餅乾麵包</a> </li>
+                                                    <li><a href="#">甜點冰品</a> </li>
+                                                    <li><a href="#">飲料調酒</a> </li>
+                                                    <li><a href="#">素食料理</a> </li>
+                                                    <li><a href="#">泰式/東南亞料理</a> </li>
+                                                    <li><a href="#">其他</a> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">烹調方式</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">熱炒</a> </li>
+                                                    <li><a href="#">煮湯</a> </li>
+                                                    <li><a href="#">香煎</a> </li>
+                                                    <li><a href="#">燉鍋</a> </li>
+                                                    <li><a href="#">蒸煮</a> </li>
+                                                    <li><a href="#">醬滷</a> </li>
+                                                    <li><a href="#">油炸</a> </li>
+                                                    <li><a href="#">炊飯</a> </li>
+                                                    <li><a href="#">燒烤</a> </li>
+                                                    <li><a href="#">紅燒</a> </li>
+                                                    <li><a href="#">醃漬</a> </li>
+                                                    <li><a href="#">汆燙</a> </li>
+                                                    <li><a href="#">涼拌</a> </li>
+                                                    <li><a href="#">焗烤</a> </li>
+                                                    <li><a href="#">烘焙</a> </li>
+                                                    <li><a href="#">麵點</a> </li>
+                                                    <li><a href="#">做醬</a> </li>
+                                                    <li><a href="#">調飲</a> </li>
+                                                    <li><a href="#">榨汁</a> </li>
+                                                    <li><a href="#">沖泡</a> </li>
+                                                    <li><a href="#">甜品</a> </li>
+                                                    <li><a href="#">其他</a> </li>
+                                                    <li><a href="#">燉熬</a> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">料理需求</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">家常菜</a> </li>
+                                                    <li><a href="#">便當菜</a> </li>
+                                                    <li><a href="#">電鍋菜</a> </li>
+                                                    <li><a href="#">蛋料理</a> </li>
+                                                    <li><a href="#">開胃菜</a> </li>
+                                                    <li><a href="#">下酒菜</a> </li>
+                                                    <li><a href="#">烤箱食譜</a> </li>
+                                                    <li><a href="#">涼拌沙拉</a> </li>
+                                                    <li><a href="#">夏日消暑</a> </li>
+                                                    <li><a href="#">素食素菜</a> </li>
+                                                    <li><a href="#">蔬食養生</a> </li>
+                                                    <li><a href="#">野餐烤肉</a> </li>
+                                                    <li><a href="#">寶寶食譜</a> </li>
+                                                    <li><a href="#">藥膳補身</a> </li>
+                                                    <li><a href="#">早午餐/下午茶</a> </li>
+                                                    <li><a href="#">坐月子/哺乳</a> </li>
+                                                    <li><a href="#">糕餅點心</a> </li>
+                                                    <li><a href="#">微波食譜</a> </li>
+                                                    <li><a href="#">年菜圍爐</a> </li>
+                                                    <li><a href="#">三明治輕食</a> </li>
+                                                    <li><a href="#">派對宴客</a> </li>
+                                                    <li><a href="#">冬令進補</a> </li>
+                                                    <li><a href="#">陶鍋料理</a> </li>
+                                                    <li><a href="#">土鍋料理</a> </li>
+                                                    <li><a href="#">砂鍋料理</a> </li>
+                                                    <li><a href="#">鑄鐵鍋料理</a> </li>
+                                                    <li><a href="#">其他</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 好食報 -->
+                            <li>
+                                <a href="stopic-index.html" class="navtext">好食報</a>
+                                <div class="megamenu clearfix">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading wsttitle clearfix"><a href="#">好食材</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">吃健康</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">品生活</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">好食活動</a></div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">最新文章</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://www.fooding.com.tw/images/article/103566/s_m112518_103566_1451009952.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>餅乾基礎原料，六種奶油一次搞懂</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">熱門文章</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://www.fooding.com.tw//images/article/104702/s_m117454_104702_1512526628_c.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>放屁很臭、肚子老是脹脹的，「腸道水腫」嚴重就變成癌！3種清腸食物消便秘、祛毒素</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">推薦商品</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://shop-fooding.hmgcdn.com/images/shop//1585/main_1585_1487576950.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>【老實農場】檸檬蜂蜜~大人小孩都愛的熱門款</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 好食材TV -->
+                            <li>
+                                <a href="tv-index.html" class="navtext">好食材TV</a>
+                                <div class="megamenu clearfix">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading wsttitle clearfix"><a href="#">食材QA</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">輕鬆上菜</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">烘焙點心</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">手殘小編玩料理</a></div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading wsttitle clearfix"><a href="#">台灣好食曆</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">花草遊戲</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">食材小旅行</a></div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">最新影片</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://fooding-aws.hmgcdn.com//images/audio/100094/lo__100094_1455595064_c.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>【食材保存】蔥花、蔥段先切好保存，上菜好快速！</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">熱門影片</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://fooding-aws.hmgcdn.com//images/audio/100558/lo__100558_1523592690_c.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>【老實農場】超人氣檸檬冰角 免擠汁好便利，輕鬆補充維他命C！</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 專題活動 -->
+                            <li>
+                                <a href="event-index.html" class="navtext">專題活動</a>
+                                <div class="megamenu clearfix">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">所有專題</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">好食曆</a> </li>
+                                                    <li><a href="#">好食曆</a> </li>
+                                                    <li><a href="#">話題精選</a> </li>
+                                                    <li><a href="#">主題影音</a> </li>
+                                                    <li><a href="#">主題食譜</a> </li>
+                                                    <li><a href="#">當令料理</a> </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading clearfix"><a href="#">試吃團</a></div>
+                                                <ul class="wstliststy01 clearfix">
+                                                    <li><a href="#">試吃品牌</a> </li>
+                                                </ul>
+                                                <div class="wstheading"><a href="#">食譜募集</a></div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">最新專題</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://fooding.hmgcdn.com/images/curatorial/100324/mb1__100324_1522143471_c.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>12種蛋料理美味做法</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">熱門專題</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://www.fooding.com.tw/images/curatorial/100308/mb1__100308_1508476327_c.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>秋冬種菜不NG！在家種蔥薑蒜.茼蒿..新手大豐收！</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 達人專區 -->
+                            <li>
+                                <a href="pro-index.html" class="navtext">達人專區</a>
+                                <div class="megamenu clearfix">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-3 col-lg-3">
+                                                <div class="wstheading wsttitle clearfix"><a href="#">食材料理家</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">養生樂活家</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">生活品味家</a></div>
+                                                <div class="wstheading wsttitle"><a href="#">閱讀提案</a></div>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">達人新文</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://www.fooding.com.tw/images/article/101785/a101785_105824_1410487841.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>馬鈴薯烘蛋</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">達人食譜</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://www.fooding.com.tw/images/cookbooks/113493/cb113493_1511949142_c.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>【簡易家常菜】節瓜冬粉蝦米</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3 col-lg-3 hidden-xs hidden-sm">
+                                                <div class="wstheading clearfix">推薦商品</div>
+                                                <a class="thumbnail" href="#" target="_blank">
+                                                    <img class="img-responsive" src="https://shop-fooding.hmgcdn.com/images/shop//1585/main_1585_1487576950.jpg" alt="">
+                                                    <div class="caption">
+                                                        <h4>【老實農場】檸檬蜂蜜~大人小孩都愛的熱門款</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 食材地圖 -->
+                            <li>
+                                <a href="#" class="navtext">食材地圖</a>
+                            </li>
+                            <!-- 個人專區 -->
+                            <li class="wsshopmyaccount clearfix">
+                                <a href="#" class="wtxaccountlink"><i class="fas fa-user"></i> 個人專區<i class="fa fa-caret-down"></i> </a>
+                                <ul class="wsmenu-submenu">
+                                    <li><a href="#"><i class="fas fa-file-alt"></i> 訂單查詢</a> </li>
+                                    <li><a href="#"><i class="fas fa-pen-square"></i> 編輯食譜</a> </li>
+                                    <li><a href="#"><i class="fas fa-address-book"></i> 個人專區</a> </li>
+                                    <li><a href="#"><i class="fas fa-key"></i> 帳號管理</a> </li>
+                                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> 登出</a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Menu End -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+        <div class="container">
+
+            <!-- 搜尋-手機版 -->
+            <div class="topnav-search hidden-md hidden-lg">
+                <form class="search">
+                    <input placeholder="搜尋全站食譜,文章,影片,商品...">
+                    <button class="btn-search"><i class="searchicon fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+
+            <!-- 公告 -->
+            <div class="alert alert-warning alert-dismissible notices" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <p><span>出貨公告：</span>因應春節連假出貨安排，2017/2/10前繳款完成的訂單將在春節前出貨，2017/2/15後的訂單將於2/20後陸續出貨</p>
+            </div>
+
+            <!-- 購物車步驟 -->
+            <div class="row">
+                <section class="cartstep">
+                    <ol>
+                        <li><p>確認商品與金額</p></li>
+                        <li><p>確認送貨地址</p></li>
+                        <li><p>選擇付款</p></li>
+                        <li class="active"><p>訂單完成</p></li>
+                    </ol>
+                </section>
+            </div>
+
+            <section class="cartaccount">
+                <div class="title">
+                    <h3>親愛的會員 test(test@google.com.tw) 您好</h3>
+                </div>
+                <p>感謝您訂購台灣好食材Fooding嚴選優質商品，您的訂單編號為：<span>XXXXXXX1234567</span>，我們將於24小時內寄發您的訂購單至 xxx123@xxx.xx供您留存。</p>
+                <p>本頁面是確認《台灣好食材Fooding》網站已接獲您的訂購訊息，並供您再次核對明細，不代表交易已經完成，《台灣好食材Fooding》仍保有決定是否接受訂單及出貨與否的權利。</p>
+                <p>提醒：3/1~6/14，若一張訂單內含活動預購商品及一般商品，此訂單分別依活動預購、一般商品總金額開立2張發票。其中活動預購商品發票將於5/14~6/14開立。</p>
+            </section>
+            
+            <!-- 商品 -->
+            <section class="shoporder completed">
+                <div class="title">
+                    <h3>訂單明細</h3>
+                </div>
+                <!-- 廠商1 -->
+                <div class="box-cart">
+                    <div class="box-company">
+                        <p><a href="#">山頂壯圓</a></p>
+                        <span>商店: 山頂壯圓</span>
+                    </div>
+                    <table>
+                    	<thead>
+                    		<tr>
+                    			<th></th>
+                    			<th>品名</th>
+                    			<th class="td-spec">規格</th>
+                    			<th class="td-number">數量</th>
+                    			<th class="td-price">單價</th>
+                    			<th class="td-price">活動折抵</th>
+                    			<th class="td-price">小計</th>
+                    		</tr>
+                    	</thead>
+                    	<tbody>
+                    		<!-- 商品1 -->
+                    		<tr>
+                    			<td class="td-img">
+                    				<img class="img-responsive img-fit" src="https://d13ko7x4wg49rl.cloudfront.net/images/shop/1329/main_1329_1479286283.jpg" alt="" style="">
+                    			</td>
+                    			<td class="td-name" data-th="品名">
+                    				<h2><a href="javascript:;">【山頂壯圓】帶殼龍眼乾-大(500g)～甜而不膩，滋補養生</a></h2>
+                    				<p>全館商品購滿999再免運</p>
+                    			</td>
+                    			<td class="td-spec" data-th="規格">500g/包</td>
+                    			<td class="td-number" data-th="數量">1</td>
+                    			<td class="td-price" data-th="單價">$350</td>
+                    			<td class="td-price" data-th="活動折抵">-100</td>
+                    			<td class="td-price td-subtotal" data-th="小計">250</td>
+                    		</tr>
+                    		<!-- 商品2 -->
+                    		<tr>
+                    			<td class="td-img">
+                    				<img class="img-responsive img-fit" src="https://d13ko7x4wg49rl.cloudfront.net/images/shop/1533/main_1533_1484703128.jpg" alt="" style="">
+                    			</td>
+                    			<td class="td-name" data-th="品名">
+                    				<h2><a href="javascript:;">【山頂壯圓】柴焙桂圓黑糖地瓜酥～香甜酥脆不膩口</a></h2>
+                    				<p>全館商品購滿999再免運</p>
+                    			</td>
+                    			<td class="td-spec" data-th="規格">包</td>
+                    			<td class="td-number" data-th="數量">3</td>
+                    			<td class="td-price" data-th="單價">$150</td>
+                    			<td class="td-price" data-th="活動折抵">-20</td>
+                    			<td class="td-price td-subtotal" data-th="小計">130</td>
+                    		</tr>
+                    		<!-- 加購商品1 -->
+                    		<tr class="tr-addbox">
+                    			<td class="td-name" data-th="品名" colspan="2">
+                    				<h2><span>加購</span><a href="javascript:;">【山頂壯圓】帶殼龍眼乾-小(500g)～手工柴燒，顆顆珍貴</a></h2>
+                    			</td>
+                    			<td class="td-spec" data-th="規格">包</td>
+                    			<td class="td-number" data-th="數量">1</td>
+                    			<td class="td-price" data-th="單價">$150</td>
+                    			<td class="td-price" data-th="活動折抵">-20</td>
+                    			<td class="td-price td-subtotal" data-th="小計">130</td>
+                    		</tr>
+                    	</tbody>
+                    	<tfoot>
+                    		<tr>
+                    			<td data-td="常溫運費" colspan="8"><span>$99</span></td>
+                    		</tr>
+                    		<tr>
+                    			<td data-td="商品金額" colspan="8"><span>$9999999</span></td>
+                    		</tr>
+                    		<tr>
+                    			<td data-td="本店小計" colspan="8" class="price"><span>$9999</span></td>
+                    		</tr>
+                    	</tfoot>		
+                    </table>	
+                </div>
+
+                <!-- 廠商2 -->
+                <div class="box-cart">
+                    <div class="box-company">
+                        <p><a href="#">御正童仔雞</a></p>
+                        <span>商店: 御正童仔雞</span>
+                    </div>
+                    <table>
+                    	<thead>
+                    		<tr>
+                    			<th></th>
+                    			<th>品名</th>
+                    			<th class="td-spec">規格</th>
+                    			<th class="td-number">數量</th>
+                    			<th class="td-price">單價</th>
+                    			<th class="td-price">活動折抵</th>
+                    			<th class="td-price">小計</th>
+                    		</tr>
+                    	</thead>
+                    	<tbody>
+                    		<!-- 商品1 -->
+                    		<tr>
+                    			<td class="td-img">
+                    				<img class="img-responsive img-fit" src="https://d13ko7x4wg49rl.cloudfront.net/images/shop/1964/main_1964_1505704123.jpg" alt="" style="">
+                    			</td>
+                    			<td class="td-name" data-th="品名">
+                    				<h2><a href="javascript:;">【御正童仔雞】小資超值烤肉組</a></h2>
+                    			</td>
+                    			<td class="td-spec" data-th="規格">組</td>
+                    			<td class="td-number" data-th="數量">9</td>
+                    			<td class="td-price" data-th="單價">$899</td>
+                    			<td class="td-price" data-th="活動折抵">0</td>
+                    			<td class="td-price td-subtotal" data-th="小計">899</td>
+                    		</tr>
+                    		<!-- 商品2 -->
+                    		<tr>
+                    			<td class="td-img">
+                    				<img class="img-responsive img-fit" src="https://d13ko7x4wg49rl.cloudfront.net/images/shop//2808/mm6610_2808_1550224258.jpg" alt="" style="">
+                    			</td>
+                    			<td class="td-name" data-th="品名">
+                    				<h2><a href="javascript:;">【御正童仔雞】白嫩雞胸(熟食)10包免運組~解凍即食，低卡增肌</a></h2>
+                    				<p>解凍即食！增肌減脂雞胸肉(熟食)10包特價699免運費</p>
+                    			</td>
+                    			<td class="td-spec" data-th="規格">組</td>
+                    			<td class="td-number" data-th="數量">999999</td>
+                    			<td class="td-price" data-th="單價">$699</td>
+                    			<td class="td-price" data-th="活動折抵">-20</td>
+                    			<td class="td-price td-subtotal" data-th="小計">699</td>
+                    		</tr>
+                    	</tbody>
+                    	<tfoot>
+                    		<tr>
+                    			<td data-td="常溫運費" colspan="8"><span>$99</span></td>
+                    		</tr>
+                    		<tr>
+                    			<td data-td="商品金額" colspan="8"><span>$9999999</span></td>
+                    		</tr>
+                    		<tr>
+                    			<td data-td="本店小計" colspan="8" class="price"><span>$9999</span></td>
+                    		</tr>
+                    	</tfoot>		
+                    </table>	
+                </div>
+
+                <!-- 贈品 -->
+                <div class="box-cart box-giftcart">
+                    <div class="box-company">
+                        <p><a href="#">贈品</a></p>
+                    </div>
+                    <table>
+                    	<thead>
+                    		<tr>
+                    			<th></th>
+                    			<th>品名</th>
+                    			<th class="td-spec">規格</th>
+                    			<th class="td-number">數量</th>
+                    			<th class="td-price">單價</th>
+                    			<th class="td-price">活動折抵</th>
+                    			<th class="td-price">小計</th>
+                    		</tr>
+                    	</thead>
+                    	<tbody>
+                    		<!-- 商品1 -->
+                    		<tr>
+                    			<td class="td-img">
+                    				<img class="img-responsive img-fit" src="https://d13ko7x4wg49rl.cloudfront.net/images/shop/135/main_135_1461228695.jpg" alt="" style="">
+                    			</td>
+                    			<td class="td-name" data-th="品名">
+                    				<h2><a href="javascript:;">【滿面香】花漾迷你小饅頭 (馬卡龍饅頭)</a></h2>
+                    			</td>
+                    			<td class="td-spec" data-th="規格">約400g,9顆/包</td>
+                    			<td class="td-number" data-th="數量">1</td>
+                    			<td class="td-price" data-th="單價">$100</td>
+                    			<td class="td-price" data-th="活動折抵">0</td>
+                    			<td class="td-price td-subtotal" data-th="小計">0</td>
+                    		</tr>
+                    		<!-- 商品2 -->
+                    		<tr>
+                    			<td class="td-img">
+                    				<img class="img-responsive img-fit" src="https://d13ko7x4wg49rl.cloudfront.net/images/shop//2808/mm6610_2808_1550224258.jpg" alt="" style="">
+                    			</td>
+                    			<td class="td-name" data-th="品名">
+                    				<h2><a href="javascript:;">【御正童仔雞】白嫩雞胸(熟食)10包免運組~解凍即食，低卡增肌</a></h2>
+                    				<p>解凍即食！增肌減脂雞胸肉(熟食)10包特價699免運費</p>
+                    			</td>
+                    			<td class="td-spec" data-th="規格">組</td>
+                    			<td class="td-number" data-th="數量"> 1</td>
+                    			<td class="td-price" data-th="單價">$699</td>
+                    			<td class="td-price" data-th="活動折抵">0</td>
+                    			<td class="td-price td-subtotal" data-th="小計">0</td>
+                    		</tr>
+                    	</tbody>		
+                    </table>	
+                </div>
+            </section>
+
+			<!-- 訂單總金額＆下一步 -->
+        	<section class="subtotal text-right">
+				<div class="subtotal-price">
+					<p>合計共有 <span>4</span> 項商品</p>
+					<p>活動共折抵 <span>$308</span></p>
+					<p>新會員折抵 <span>$200</span></p>
+					<p>訂單總金額 <span>$2,812</span></p>
+				</div>
+			</section>
+
+
+            <!-- 收貨人 -->
+            <section class="receipt">
+                <div class="title">
+                    <h3>收貨人</h3>
+                </div>
+                <div class="box-receipt">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>收貨人</th>
+                                <th>地址</th>
+                                <th>電話</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="收貨姓名">*憶*</td>
+                                <td class="td-add" data-th="收貨地址">**********141號8樓</td>
+                                <td data-th="收貨電話">0920******</td>
+                        </tbody>      
+                    </table>   
+
+                    <p><span>提醒您</span></p>
+                    <p>《台灣好食材Fooding》絕對不會主動以電話或手機簡訊、line訊息等通知消費者更改付款方式或改用ATM轉帳，也不會委託廠商通知消費者更改付款方法，若您接到相關電話或簡訊通知請不要理會。</p> 
+                </div>
+            </section>
+
+            <!-- ATM付款資訊 -->
+            <section class="atminfo">
+                <div class="title">
+                    <h3>ATM付款資訊</h3>
+                </div>
+                <div class="box-atminfo">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>繳費金額</th>
+                                <th>付款方式</th>
+                                <th>銀行代碼</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="繳費金額">$950</td>
+                                <td data-th="付款方式">ATM櫃員機</td>
+                                <td data-th="銀行代碼">008</td>
+                        </tbody>      
+                    </table>   
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ATM繳費帳號</th>
+                                <th>繳費截止日期</th>
+                                <th class="hidden-xs"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="ATM繳費帳號">9840923842098390</td>
+                                <td data-th="繳費截止日期">2019/05/05 23:00:00</td>
+                                <td class="hidden-xs"></td>
+                        </tbody>      
+                    </table>  
+
+                    <p><span>ATM轉帳繳款須知</span></p>
+                    <p>提醒您：《台灣好食材Fooding》不會主動以電話、手機簡訊、Line訊息等通知消費者變更付款方式，也不會委託廠商通知消費者更改付款方法，若您接到相關電話或簡訊，請不要理會。轉帳成功後，系統將於成功後1~2小時內發送繳款成功通知。晚上 12 點至凌晨 1 點之間為銀行固定維護時間，如於此期間進行轉帳，將於凌晨 1 點後入帳。使用ATM櫃員機，可選擇轉帳 / 轉出 ( 繳費單筆上限3萬元 ) 或繳費 ( 無上限3萬元限制 ) 之功能按鈕。適用【繳費】功能之銀行ATM櫃員機：玉山銀行、臺灣銀行、中國信託、土地銀行、富邦銀行、第一銀行、華南銀行、台新銀行、彰化銀行。(無上限3萬元限制)。若使用第一銀行ATM櫃員機，請選擇「繳費」按鈕。</p> 
+                </div>
+            </section>
+
+            <!-- 注意事項 -->
+        	<section class="cartnotes">
+        		<div class="title">
+                    <h3>注意事項</h3>
+                </div>
+                <ul>
+                	<li>【注意事項】<strong>根據消保法規定，食品不在商品到貨七天猶豫期之範圍內；但若運送過程導致產品瑕疵（如變質、異味、產品破損等），到貨7日內可更換新品。其他則恕不接受退換貨。</strong></li>
+                	<li>【查詢訂單】感謝您訂購《台灣好食材Fooding》精選優質商品，您可至會員專區查詢您的訂單狀況，或修改您的基本資料。</li>
+                	<li>【出貨通知】您本次訂購商品將由合作廠商以宅配寄送，出貨訊息將寄發到您的會員信箱通知您。<strong>請注意，同一訂單若包含不同品牌商品，商品將分開寄送。</strong></li>
+                	<li>【發票處理方式】根據財政部令「電子發票實施作業要點」規定，客戶於台灣好食材Fooding消費開立之「二聯式電子發票」不直接郵寄紙本發票(除三聯式發票外)，將以E-mail發送發票開立通知信給您。亦會將發票上傳至 「財政部電子發票整合平台」供會員查閱。</li>
+                	<li>【客服專線】若您有任何疑問，請於上班時間致電客服專線：0800-020-299 / (02)2500-7718；服務時間 周一至周五 9：30~18：00  (國定假日及例假日休)</li>
+                	<li>【線上服務】您也可利用 <a href="#" target="_blank">台灣好食材FB粉絲團</a> 發訊息提問，小編會儘快回覆您喔</li>
+                </ul>
+        	</section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-box hidden-xs hidden-sm">
+                <h3 class="footer-title">關於我們</h3>
+                <ul class="footer-listbox">
+                    <li><a href="about.php">關於台灣好食材</a></li>
+                    <li><a href="regulation.php">全站條款</a></li>
+                    <li><a href="board.php">站方公告</a></li>
+                    <li><a href="mailto:ellen_hsu372@hmg.com.tw">企業合作</a></li>
+                    <li><a href="https://bit.ly/2oS1wFu">企業採購方案</a></li>
+                    <li><a href="QA.php">常見問題Q&A</a></li>
+                    <li><a href="mailto:nicky_lee@hmg.com.tw">試吃招募</a></li>
+                </ul>
+            </div>
+            <div class="footer-box hidden-xs hidden-sm">
+                <h3 class="footer-title"><a href="https://shop.fooding.com.tw/">好食購</a></h3>
+                <ul class="footer-listbox">
+                    <li><a href="list.php?class1=1">好食</a></li>
+                    <li><a href="list.php?class1=2">好物</a></li>
+                    <li><a href="list.php?class1=3">好禮</a></li>
+                    <li><a href="list.php?promoType=brand">好品牌</a></li>
+                </ul>
+            </div>
+            <div class="footer-box hidden-xs hidden-sm">
+                <h3 class="footer-title"><a href="recipe-index.php">看食譜</a></h3>
+                <ul class="footer-listbox">
+                    <li><a href="recipe-list.php?mainClass=100001">主要食材</a></li>
+                    <li><a href="recipe-list.php?mainClass=100002">食譜菜式</a></li>
+                    <li><a href="recipe-list.php?mainClass=100003">烹調方式</a></li>
+                    <li><a href="recipe-list.php?mainClass=100004">料理需求</a></li>
+                </ul>
+            </div>
+            <div class="footer-box hidden-xs hidden-sm">
+                <h3 class="footer-title"><a href="stopic-index.php">好食報</a></h3>
+                <ul class="footer-listbox">
+                    <li><a href="article-list.php?cid=28">好食材</a></li>
+                    <li><a href="article-list.php?cid=29">吃健康</a></li>
+                    <li><a href="article-list.php?cid=30">品生活</a></li>
+                    <li><a href="article-list.php?cid=27">好食活動</a></li>
+                </ul>
+            </div>
+            <div class="footer-box hidden-xs hidden-sm">
+                <h3 class="footer-title"><a href="">達人專區</a></h3>
+                <ul class="footer-listbox">
+                    <li><a href="#">食材料理家</a></li>
+                    <li><a href="#">養生樂活家</a></li>
+                    <li><a href="#">生活品味家</a></li>
+                    <li><a href="#">閱讀提案</a></li>
+                </ul>
+            </div>
+            <div class="footer-box hidden-xs hidden-sm">
+                <h3 class="footer-title"><a href="">好食材TV</a></h3>
+                <ul class="footer-listbox">
+                    <li><a href="#">食材QA</a></li>
+                    <li><a href="#">輕鬆上菜</a></li>
+                    <li><a href="#">烘焙點心</a></li>
+                    <li><a href="#">手殘小編玩料理</a></li>
+                    <li><a href="#">台灣好食曆</a></li>
+                    <li><a href="#">食材小旅行</a></li>
+                </ul>
+            </div>
+            <div class="footer-box hidden-xs hidden-sm">
+                <h3 class="footer-title"><a href="">專題活動</a></h3>
+                <ul class="footer-listbox">
+                    <li><a href="#">所有專題</a></li>
+                    <li><a href="#">食譜募集</a></li>
+                    <li><a href="#">試吃團</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3 class="footer-title hidden-xs hidden-sm"><a href="">食材地圖</a></h3>
+                <h3 class="footer-title">台灣好食材社群</h3>
+                <div class="footer-community">
+                    <a class="btn btn-community" href="#" role="button"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-community btn-line" href="#" role="button"></a>
+                    <a class="btn btn-community" href="#" role="button"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-community" href="#" role="button"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="col-xs-12 hidden-md hidden-lg text-center">
+                <a class="btn btn-danger btn-QA" href="#" role="button">常見問題Q&A</a>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p class="copyright"> Copyright ©2018 台灣好食材Fooding. All Rights Reserved.版權所有 </p>
+        </div>
+    </footer>
+
+    <!-- Right Box -->
+    <div class="rightbox">
+        <a href="#" target="_blank"><img src="images/new/common/1040x1040.jpg"></a>
+        <button type="button" id="rightbox-close" class="btn btn-default btn-close"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Back To Top -->
+    <div class="top">
+        <a id="back-to-top" href="#" class="btn btn-basic btn-top" role="button">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="new/common/js/jquery.js"></script>
+    <script src="new/common/js/bootstrap.min.js"></script>
+
+    <!-- Increase Or Decrease In Quantity JS -->
+    <script src="new/shop/js/input-number.js"></script>
+
+    <!-- object-fit For IE -->
+    <script>
+        objectFitImages('.img-fit');
+    </script> 
+
+    <!-- Close Right Box -->
+    <script>
+    $("#rightbox-close").click(function() {
+        $('.rightbox').hide();
+    });
+    </script>
+
+    <!-- Back To Top -->
+    <script src="new/common/js/back-to-top.js"></script>
+</body>
+
+</html>

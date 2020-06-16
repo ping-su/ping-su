@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <title>花草遊戲‧台灣好園藝 - 台灣最大園藝知識分享社群平台</title>
+    
+
+
+    
+    <!-- object-fit For IE -->
+    <script src="js/objectfit.js"></script> 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="css/rd-navbar.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FB Plugin CSS -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v5.0"></script>
+
+    
+
+</head>
+
+<body>
+
+    <!--========================================================
+                              LOADING
+    =========================================================-->
+    <div class="preloader">
+        <div class="status">
+            <svg class="spinner" width="45px" height="45px" viewBox="0 0 66 66">
+               <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
+        </div>
+    </div>
+
+
+
+
+
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header class="page-header text-center" data-type="anchor">
+        <!-- RD Navbar -->
+        <div class="rd-navbar-wrap">
+            <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-sm-stick-up-offset="50px" data-lg-stick-up-offset="150px" class="rd-navbar">
+                <div class="rd-navbar-inner">
+                    <!-- RD Navbar Panel -->
+                    <div class="rd-navbar-panel">
+                        <div class="rd-navbar-panel-canvas"></div>
+
+                        <!-- RD Navbar Toggle -->
+                        <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+
+                        <!-- RD Navbar Brand -->
+                        <div class="rd-navbar-brand">
+                            <a href="index.html" class="brand-name">
+                                <img src="img/logo.png">
+                            </a>
+                        </div>
+
+                        <!-- RD Navbar Search -->
+                        <div class="rd-navbar-search hidden-xs">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rd-navbar-outer">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-subpanel">
+                            <div class="rd-navbar-nav-wrap">
+                                <!-- RD Navbar Nav -->
+                                <ul class="rd-navbar-nav">
+                                    <li>
+                                        <a href="channel-index.html">花草知識庫</a>
+
+                                        <!-- RD Navbar Dropdown -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">新手入門</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">病蟲害診療</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">繁殖栽培訣竅</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">澆水施肥修剪</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">疑難雜症區</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">自己種菜吃</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">種菜不失敗</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">種菜好地方</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">好菜大推薦</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">多肉小世界</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">種多肉不失敗</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">多肉品種推薦</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">多肉小佈置</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">花草樂生活</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">庭園綠設計</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">花草達人</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">綠色小旅行</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">花生活佈置</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">好園藝TV</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">生活花佈置</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">種植秘訣</a>
+                                            </li>
+                                            <li>
+                                                <a href="article-list.html">花生活Newes</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="channel-index.html">生態趣知識</a>
+
+                                        <!-- RD Navbar Megamenu -->
+                                        <ul class="rd-navbar-dropdown">
+                                            <li>
+                                                <a href="article-list.html">人文與植物</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- RD Navbar Search Toggle -->
+                            <div class="rd-navbar-search-wrap hidden-md hidden-lg">
+                                <button class="btn rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search, .rd-navbar, .rd-navbar-inner">
+                                    <span></span>
+                                </button>
+                                <div class="rd-navbar-search">
+                                    <form action="" method="post">
+                                        <div class="form-group">
+                                            <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    
+    
+
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <h1 class="hide">花草遊戲‧台灣好園藝 - 台灣最大園藝知識分享社群平台</h1>
+
+        <section class="banner">
+            <div class="box-banner">
+                <div class="banner-slider">
+                    <a href="#" target="_blank">
+                        <img class="img-responsive" src="img/1200x400-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="banner-slider">
+                    <a href="#" target="_blank">
+                        <img class="img-responsive" src="img/1200x400-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="banner-slider">
+                    <a href="#" target="_blank">
+                        <img class="img-responsive" src="img/1200x400-3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="banner-slider">
+                    <a href="#" target="_blank">
+                        <img class="img-responsive" src="img/1200x400-1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="banner-slider">
+                    <a href="#" target="_blank">
+                        <img class="img-responsive" src="img/1200x400-2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="banner-slider">
+                    <a href="#" target="_blank">
+                        <img class="img-responsive" src="img/1200x400-3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- 閱讀最新好文 -->
+        <section>
+            <div class="container">
+                <h2 class="title-img"><img src="img/title-newarticle.png" alt="觀看最新影音">閱讀最新好文</h2>
+                <div class="row">
+                    <div class="box-article">
+                        <div class="col-xs-6 col-md-4 text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-1.jpg" alt="">
+                            </a>
+                            <h3><a href="#">養生芳療！運用精油舒緩鼻子過敏、感冒初期不適！</a></h3>
+                            <a class="btn btn-more" href="#">更多花草知識庫</a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-2.jpg" alt="">
+                            </a>
+                            <h3><a href="#">小巧可愛的迷你多肉花圈</a></h3>
+                            <a class="btn btn-more" href="#">更多自己種菜吃</a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-3.jpg" alt="">
+                            </a>
+                            <h3><a href="#">用生命在授粉──吊桶蘭跟蘭花蜜蜂共同演化</a></h3>
+                            <a class="btn btn-more" href="#">更多多肉小世界</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/ad-600x400-4.jpg" alt="">
+                            </a>
+                            <h3><a href="#">(只出現平版手機)廣告版位廣告版位</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 970x250 Ads -->
+                <div class="ads">
+                    <div id="" class="ad-img">
+                        <img class="img-responsive" src="img/ad-970x250-1.jpg">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="box-article">
+                        <div class="col-xs-6 col-md-4 text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-4.jpg" alt="">
+                            </a>
+                            <h3><a href="#">是誰吃了我的植物？植物醫生教你觀察與鑑定害蟲</a></h3>
+                            <a class="btn btn-more" href="#">更多花草樂生活</a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-5.jpg" alt="">
+                            </a>
+                            <h3><a href="#">種豆芽超簡單，5天就收成</a></h3>
+                            <a class="btn btn-more" href="#">更多好園藝TV</a>
+                        </div>
+                        <div class="col-xs-6 col-md-4 text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/article-6.jpg" alt="">
+                            </a>
+                            <h3><a href="#">新手必看！讓你秒懂多肉植物的四季照護和急救方式</a></h3>
+                            <a class="btn btn-more" href="#">更多生態趣知識</a>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 hidden-md hidden-lg text-right">
+                            <a class="item-img" href="#">
+                                <img class="img-responsive" src="img/ad-600x400-4.jpg" alt="">
+                            </a>
+                            <h3><a href="#">(只出現平版手機)廣告版位廣告版位</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- 好園藝NEWS -->
+        <section class="news">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title-img"><img src="img/title-news.png" alt="觀看最新影音">閱讀最新好文</h2>
+                    <div class="col-xs-12 col-sm-6">   
+                        <ul>
+                            <li><a href="#">種「茉莉」泡鮮採花茶，遠離DDT</a></li>
+                            <li><a href="#">按讚加入花草遊戲台灣好園藝粉絲團，園藝知識全收集</a></li>
+                            <li><a href="#">讓粉紅公主花 帶來粉嫩與浪漫的聖誕節</a></li>
+                            <li><a href="#">廣告版位廣告版位廣告版位廣告版位廣告版位</a></li>
+                            <li><a href="#">多肉植物10大病蟲害防治對策</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <ul>
+                            <li><a href="#">種「茉莉」泡鮮採花茶，遠離DDT</a></li>
+                            <li><a href="#">按讚加入花草遊戲台灣好園藝粉絲團，園藝知識全收集</a></li>
+                            <li><a href="#">讓粉紅公主花 帶來粉嫩與浪漫的聖誕節</a></li>
+                            <li><a href="#">【日常芳療Q&A】如何改善腹脹與消化不良</a></li>
+                            <li><a href="#">廣告版位廣告版位廣告版位廣告版位廣告版位</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- 970x250 Ads -->
+        <div class="ads">
+            <div id="" class="ad-img">
+                <img class="img-responsive" src="img/ad-970x250-1.jpg">
+            </div>
+        </div>
+        
+
+
+
+
+        <!-- 觀看最新影音 -->
+        <section class="newvideo">
+            <div class="container">
+                <h2 class="title-img"><img src="img/title-newvideo.png" alt="觀看最新影音">觀看最新影音</h2>           
+                <div class="box-video">
+                    <div class="item-slider">
+                        <a href="#" target="_blank">
+                            <img class="img-responsive" src="img/video-1.jpg" alt="">
+                            <h3>【日常芳療Q&A】如何克服經前緊張症候群</h3>
+                        </a>
+                    </div>
+                    <div class="item-slider">
+                        <a href="#" target="_blank">
+                            <img class="img-responsive" src="img/video-2.jpg" alt="">
+                            <h3>打造自然雜貨風格陽台小花園</h3>
+                        </a>
+                    </div>
+                    <div class="item-slider">
+                        <a href="#" target="_blank">
+                            <img class="img-responsive" src="img/video-3.jpg" alt="">
+                            <h3>小巧可愛的迷你多肉花圈</h3>
+                        </a>
+                    </div>
+                    <div class="item-slider">
+                        <a href="#" target="_blank">
+                            <img class="img-responsive" src="img/video-1.jpg" alt="">
+                            <h3>【日常芳療Q&A】如何克服經前緊張症候群</h3>
+                        </a>
+                    </div>
+                    <div class="item-slider">
+                        <a href="#" target="_blank">
+                            <img class="img-responsive" src="img/video-2.jpg" alt="">
+                            <h3>打造自然雜貨風格陽台小花園</h3>
+                        </a>
+                    </div>
+                    <div class="item-slider">
+                        <a href="#" target="_blank">
+                            <img class="img-responsive" src="img/video-3.jpg" alt="">
+                            <h3>小巧可愛的迷你多肉花圈</h3>
+                        </a>
+                    </div>
+                </div>
+                <a class="btn btn-more" href="#">更多好園藝TV</a>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- 園藝大小事 + 花草達人 + 好園藝FB -->
+        <section class="garden">
+            <div class="container">
+                <div class="row">   
+                    <div class="col-xs-12 col-md-8">
+                        <!-- 園藝大小事 -->
+                        <h2 class="title-img"><img src="img/title-garden.png" alt="園藝大小事">園藝大小事</h2>
+                        <div class="box-garden" style="margin-bottom: 55px;">
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-1.jpg" alt="">
+                                    <h3>【日常芳療Q&A】如何克服經前緊張症候群</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-2.jpg" alt="">
+                                    <h3>打造自然雜貨風格陽台小花園</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-3.jpg" alt="">
+                                    <h3>小巧可愛的迷你多肉花圈</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-4.jpg" alt="">
+                                    <h3>【日常芳療Q&A】如何克服經前緊張症候群</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-5.jpg" alt="">
+                                    <h3>打造自然雜貨風格陽台小花園</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-6.jpg" alt="">
+                                    <h3>小巧可愛的迷你多肉花圈</h3>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <!-- 花草達人 -->
+                        <h2 class="title-img"><img src="img/title-pro.png" alt="花草達人">花草達人</h2>
+                        <div class="box-garden">
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-7.jpg" alt="">
+                                    <h3>吃完蜜柚種子別丟，種出一片小森林</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-8.jpg" alt="">
+                                    <h3>香料植物入菜有順序，你用對了嗎？</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-9.jpg" alt="">
+                                    <h3>劉力學》播撒理想種子的臨海農場</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-10.jpg" alt="">
+                                    <h3>簡單擺就超有綠意感的觀葉植物</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-11.jpg" alt="">
+                                    <h3>DIY玩佈置 打造禪風小花園</h3>
+                                </a>
+                            </div>
+                            <div class="item-slider">
+                                <a href="#" target="_blank">
+                                    <img class="img-responsive" src="img/article-12.jpg" alt="">
+                                    <h3>夏天也適用！４步驟學會盆栽壓條法</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <h2 class="title-img"><img src="img/title-fb.png" alt="好園藝FB">好園藝FB</h2>
+
+                        <!-- facebook -->
+                        <div class="fb-link">
+                            <div class="fb-page" data-href="https://www.facebook.com/mygardenlife.tw/" data-tabs="timeline" data-width="500" data-height="440" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/mygardenlife.tw/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mygardenlife.tw/">花草遊戲‧台灣好園藝</a></blockquote></div>
+                        </div>
+
+                        <!-- 672x560 Ads -->
+                        <div class="ads">
+                            <div id="" class="ad-img">
+                                <img class="img-responsive" src="img/ad-672x560.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="footer">
+            <ul>
+                <li><a href="about.html">關於我們</a></li>
+                <li><a href="regulation.html">全站條款</a></li>
+                <li><a href="#">企業合作</a></li>
+            </ul>
+            <div class="btn-icon">
+                <a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="youtube" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>Copyright © 花草遊戲 台灣好園藝My Garden. All Rights Reserved.版權所有</p>
+        </div>
+    </footer>
+
+
+
+
+    
+    <!-- Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+
+    <!-- Slick JS -->
+    <script src="js/slick/slick.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+            $('.box-banner').slick({
+                dots: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                variableWidth: true,
+                responsive: [
+                    {
+                      breakpoint: 768,
+                      settings: {
+                        arrows: false,
+                      }
+                    },
+                ]
+            });
+
+            $('.box-video').slick({
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $('.box-garden').slick({
+                dots: false,
+                infinite: true,
+                centerMode: true,
+                speed: 300,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+    </script>
+
+    <!-- Header JS -->
+    <script src="js/navbar/core.min.js"></script>
+    <script src="js/navbar/script.js"></script>
+
+    <!-- Loading JQ -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".status").fadeOut();
+            $(".preloader").delay(250).fadeOut("slow");
+        })
+    </script>
+
+</body>
+
+</html>
+

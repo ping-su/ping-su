@@ -1,0 +1,343 @@
+body {
+	font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	background-color: #93f2e1;
+}
+
+.logo-l {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 9;
+}
+
+.logo-l img {
+	height: 5.5vh;
+}
+
+/* ----- topbanner ----- */
+.topbox {
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 38.5%;
+	background-image: url(../images/bg.png);
+	background-size: cover;
+}
+
+.right {
+	width: 18.5%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 2.75% 41.15% 0 0;
+}
+
+.full_x {
+	width: 100%;
+}
+
+.bg-left {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    z-index: 5;
+    -webkit-animation: bgmove1 3s infinite;
+    animation: bgmove1 3s infinite;
+}
+
+.bg-left img {
+    width: 2.15vw;
+}
+
+@-webkit-keyframes bgmove1 {
+    50% {
+        top: 25%;
+    }
+}
+
+@keyframes bgmove1 {
+    50% {
+        top: 25%;
+    }
+}
+
+.bg-right {
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    z-index: 5;
+    -webkit-animation: bgmove2 3s infinite;
+    animation: bgmove2 3s infinite;
+}
+
+.bg-right img {
+    width: 3vw;
+}
+
+@-webkit-keyframes bgmove2 {
+    50% {
+        top: 30%;
+    }
+}
+
+@keyframes bgmove2 {
+    50% {
+        top: 30%;
+    }
+}
+
+/* ----- content ----- */
+.contentbox {
+	width: 100%;
+	position: relative;
+}
+
+.pro-01 img, .pro-02 img, .pro-03 img, .pro-04 img {
+	margin: 0 auto;
+}
+
+.pro-01 {
+	margin-top: 4.15%;
+}
+
+.btn-more {
+	padding: 6px 30px;
+	border-radius: 30px;
+}
+
+.btn-pro01 {
+	margin-top: -5.5%;
+	margin-right: 14%;
+}
+
+.btn-pro02 {
+	margin-top: -4.5%;
+	margin-right: 17%;
+}
+
+.btn-pro03 {
+	margin-top: -4.5%;
+	margin-right: 50%;
+}
+
+.btn-pro04 {
+	margin-top: 4.5%;
+}
+
+.material-01 {
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	z-index: 3;
+}
+
+.material-01 img {
+    width: 2.65vw;
+}
+
+.material-02 {
+	position: absolute;
+	top: 30%;
+	left: 11%;
+	z-index: 3;
+}
+
+.material-02 img {
+    width: 3.55vw;
+}
+
+.material-03 {
+	position: absolute;
+	bottom: 5%;
+	left: 18%;
+	z-index: 3;
+}
+
+.material-03 img {
+    width: 4.85vw;
+}
+
+.material-04 {
+	position: absolute;
+	top: 3%;
+	right: 5%;
+	z-index: 3;
+}
+
+.material-04 img {
+    width: 4.85vw;
+}
+
+.material-05 {
+	position: absolute;
+	bottom: 50%;
+	right: 12%;
+	z-index: 3;
+}
+
+.material-05 img {
+    width: 4.15vw;
+}
+
+/* ----- footer ----- */
+footer p {
+    line-height: 30px;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1400px) {
+	.bg-left {
+ 		top: 8%;
+ 	}
+
+ 	@-webkit-keyframes bgmove1 {
+	    50% {
+	        top: 10%;
+	    }
+	}
+
+	@keyframes bgmove1 {
+	    50% {
+	        top: 10%;
+	    }
+	}
+
+	.bg-right {
+	    top: 12%;
+	}
+
+	@-webkit-keyframes bgmove2 {
+	    50% {
+	        top: 15%;
+	    }
+	}
+
+	@keyframes bgmove2 {
+	    50% {
+	        top: 15%;
+	    }
+	}
+	
+	.material-01 {
+		top: 15%;
+		left: 1.5%;
+	}
+
+	.material-02 {
+		top: 30%;
+		left: 5%;
+	}
+
+	.material-03 {
+		bottom: 5%;
+		left: 4%;
+	}
+
+	.material-03 img {
+		width: 5.85vw;
+	}
+
+	.material-04 {
+		top: 3%;
+		right: 3%;
+	}
+	
+	.material-05 {
+		bottom: 50%;
+		right: 5%;
+	}
+
+	.material-05 img {
+		width: 5.15vw;
+	}
+	
+}
+
+/* ----- 平板版 ----- */
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+ 	.bg-left {
+ 		top: 8%;
+ 	}
+
+ 	@-webkit-keyframes bgmove1 {
+	    50% {
+	        top: 10%;
+	    }
+	}
+
+	@keyframes bgmove1 {
+	    50% {
+	        top: 10%;
+	    }
+	}
+
+	.bg-right {
+	    top: 12%;
+	}
+
+	@-webkit-keyframes bgmove2 {
+	    50% {
+	        top: 15%;
+	    }
+	}
+
+	@keyframes bgmove2 {
+	    50% {
+	        top: 15%;
+	    }
+	}
+
+ 	.pro-04 {
+		margin-top: -22.5%;
+	}
+
+	.btn-more {
+		padding: 5px 25px;
+	}
+
+	.btn-pro01 {
+		margin-right: 0;
+	}
+
+	.btn-pro02 {
+		margin-right: 12%;
+	}
+
+	.btn-pro03 {
+		margin-right: 45%;
+	}
+
+	footer {
+		margin-top: 15px;
+	}
+ }
+
+/* ----- 手機版 ----- */
+  @media screen and (max-width: 768px) { 
+  	.topbox {
+		display: block;
+		width: 100%;
+		height: 0;
+		background-image: url(../images/topbanner-m.jpg);
+		padding-bottom: 91.5%;
+		background-size: cover;
+		position: relative;
+		min-height: 0;
+	}
+
+	.pro-01, .pro-02, .pro-03, .pro-04 {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	
+	footer {
+		padding: 0 20px;
+	}
+
+	footer p {
+		line-height: 16px;
+	}
+  }

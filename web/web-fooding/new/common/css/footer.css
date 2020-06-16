@@ -1,0 +1,126 @@
+/*========================================================
+                   footer CSS
+=========================================================*/
+.footer-top {
+    background: #faf8f4;
+    padding:30px 0 20px 0;
+    margin-top: 30px;
+}
+.footer-top{ 
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.footer-box  {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.footer-title {
+	font-size: 14.5px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.footer-title a {
+	color: #554646;
+}
+.footer-listbox {
+	padding-left: 2px;
+}
+.footer-listbox li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+.footer-listbox li a {
+	display: inline-block;
+	font-size: 12.5px;
+	color: #554646;
+	font-weight: 400;
+}
+.footer-listbox li a:hover {
+	color: #554646;
+}
+.footer-community {
+	margin-top: 20px;
+}
+.footer-bottom {
+	background: #c58d63;
+    padding: 8px 0;
+}
+.btn-community {
+    font-size: 17px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 0;
+    background-color: #faf8f4;
+    padding: 0;
+}
+.btn-community:hover, .btn-community:active, .btn-community:focus {
+    color: #fff !important;
+    background-color: #554646;
+}
+.btn-line {
+    background: url(../../../images/new/common/line2.png);
+    background-size: 35px 35px;
+}
+.btn-line:hover, .btn-line:active, .btn-line:focus {
+    background-image: url(../../../images/new/common/line2a.png);
+}
+
+.copyright {
+	font-size: 12.5px;				
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}	
+
+/*=============== 平板版 ===============*/
+@media screen and (max-width:1024px){
+	.footer-box  {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+/*=============== 手機版 ===============*/
+@media screen and (max-width:991px) {
+	.footer-top {
+		margin-top: 0;
+		padding-top: 20px;
+		flex-wrap: wrap;
+	}
+	.footer-box {
+		padding-left: 5px;
+		padding-right: 5px;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.footer-title {
+		font-size: 16px;
+	}
+	.btn-QA {
+		font-size: 14.5px;
+		color: #554646;
+		border-radius: 30px;
+		background-color: #faf8f4;
+		border-color: #554646;
+		padding: 7px 15px 4px;
+	}
+	a.btn-danger.btn-QA:focus, a.btn-danger.btn-QA:active, a.btn-danger.btn-QA:hover {
+		color: #fff !important;
+		background-color: #554646;
+		border-color: #554646;
+	}
+	.footer-community {
+		margin: 13px 0;
+	}
+	.copyright {
+        line-height: 18px;
+    }
+
+}

@@ -1,0 +1,885 @@
+body {
+	font-family: Arial, "微軟正黑體", Helvetica, sans-serif;
+	font-size: 16px;
+	color: #666;
+	line-height: 26px;
+	letter-spacing: 1.5px;
+}
+
+header:after{
+    display: block;
+	content: "";
+    width: 100%;
+    height: 10px;
+    background: #eba023;
+    background: -moz-linear-gradient(left, #eba023 0%, #ffc43f 50%, #eba023 100%);
+    background: -webkit-linear-gradient(left, #eba023 0%,#ffc43f 50%,#eba023 100%);
+    background: linear-gradient(to right, #eba023 0%,#ffc43f 50%,#eba023 100%);
+}
+
+a:hover, a:focus, a:active {
+	text-decoration: none !important;
+}
+
+
+/*===== Navbar =====*/
+.navbar {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #fff;
+	border-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #000;
+	font-size: 17px;
+	font-weight: bold;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 8px;
+	margin-left: 40px;
+	transition: all 0.2s ease;
+	position: relative;
+	line-height: 30px;
+}
+
+.navbar-default .navbar-nav > li > a:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #ffc43f;
+    height: 3px;
+
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.navbar-default .navbar-nav > li > a:hover:before, .navbar-default .navbar-nav > li > a:focus:before, .navbar-default .navbar-nav > li > a:active:before {
+	left: 0;
+	right: 0;
+	color: #e19619;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active {
+	color: #e19619;
+}
+
+.fooding {
+	height: auto;
+}
+
+.fooding img {
+	width: 8vw;
+}
+
+@media screen and (max-width: 1399px) {
+	.navbar {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 800px) {
+	.navbar-default .navbar-nav > li > a {
+		margin-left: 25px;
+		font-size: 14.5px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		display: block;
+	}
+	.navbar-brand {
+		padding: 10px 5px;
+	}
+	.navbar-default .navbar-nav > li > a {
+		margin-left: 0;
+	}
+	.fooding img {
+	    width: 100px;
+	}
+}
+
+
+/*===== Topbanner =====*/
+.top {
+	display: flex;
+    width: 100%;
+    height: 65vh;
+    min-height: 300px;
+    background-image: url("../images/topbanner-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    position: relative;
+}
+
+.coa-1 {
+	position: absolute;
+	top: 18px;
+	left: 15px;
+	height: auto;
+}
+
+.coa-1 img {
+	width: 12vw;
+}
+
+.coa-2 {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
+
+.coa-2 img {
+	width: 2.5vw;
+}
+
+.word {
+    position: relative;
+    margin-top: 3%;
+    width: 34vw;
+    height: auto;
+    padding-bottom: 17%;
+    background-image: url("../images/topbanner-1.png");
+    background-size: cover;
+}
+
+h1 {
+	display: none !important;
+}
+
+.word img {
+    width: 15vw;
+    z-index: 15;
+    position: absolute;
+    bottom: 13%;
+    left: 26%;
+    right: 0;
+}
+
+@media screen and (max-width: 1199px) {
+	.top {
+		height: 50vh;
+	}
+	.word {
+	    margin-top: 3%;
+	    width: 55vw;
+	    padding-bottom: 30%;
+	}
+
+	.word img {
+	    width: 25vw;
+	    bottom: 18%;
+	    left: 25%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.top {
+		height: 30vh;
+    	background-image: url("../images/topbanner-bg-m.jpg");
+    	min-height: 200px;
+	}
+	.coa-1 {
+		top: 8px;
+	    left: 5px;
+	}
+	.coa-1 img {
+	    width: 150px;
+	}
+	.coa-2 {
+		right: 5px;
+		bottom: 2px;
+	}
+	.coa-2 img {
+	    width: 30px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.top {
+		height: 27vh;
+		min-height: 0;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	.coa-1 img {
+	    width: 115px;
+	}
+	.coa-2 img {
+	    width: 30px;
+	}
+}
+
+
+/*===== 編輯的便當盒 =====*/
+.bento {
+    margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.title {
+	margin: 60px 0 20px;
+}
+
+.title img {
+	width: 265px;
+	margin-bottom: 20px;
+}
+
+.title p {
+	font-weight: bold;
+	color: #e19619;
+	margin: 0;
+}
+
+.thumbnail {
+	border: 0;
+}
+
+.thumbnail .caption {
+	padding: 0;
+}
+
+.caption h2 {
+	font-size: 18px;
+	color: #333;
+	font-weight: bold;
+	text-align: left;
+	margin: 15px 0;
+	transition: all 0.2s ease;
+}
+
+a:hover .thumbnail img, a:focus .thumbnail img, a:active .thumbnail img {
+	opacity: 0.8;
+}
+
+a:hover .thumbnail h2, a:focus .thumbnail h2, a:active .thumbnail h2 {
+	color: #e19619;
+}
+
+@media screen and (min-width: 1250px) {
+	.container {
+	    width: 1250px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.title img {
+		width: 185px;
+	}
+}
+
+
+/*===== 網友食譜 =====*/
+.recipe {
+    margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.recipe-box {
+	margin-left: -10px; 
+	margin-right: -10px; 
+	display: flex; 
+	flex-direction: row; 
+	justify-content: flex-start; 
+	flex-wrap: wrap;
+}
+
+.recipe-box .thumbnail a img {
+	height: 250px;
+	object-fit: cover;
+}
+
+.thumbnail a:hover img, .thumbnail a:focus img, .thumbnail a:active img {
+	opacity: 0.8;
+}
+
+.thumbnail a:hover h2, .thumbnail a:focus h2, .thumbnail a:active h2 {
+	color: #e19619;
+}
+
+.votebox {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.votebox .author {
+	display: inline-block;
+	width: 70%;
+	font-size: 15px;
+	color: #666;
+	text-align: left;
+	float: left;
+}
+
+.votebox .vote {
+	display: inline-block;
+	width: 30%;
+	font-size: 15px;
+	color: #e19619;
+	text-align: right;
+	font-weight: 600;
+	float: right;
+}
+
+.btn {
+	width: 100%;
+	line-height: 22px;
+	background-color: #ddd;
+	border-color: #ddd;
+}
+
+.btn-vote {
+	color: #fff;
+	background-color: #f0ad4e;
+	border-color: #eea236;
+}
+
+.btn-more {
+	width: 215px;
+	font-size: 20px;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 12px 0 10px;
+	margin-top: 50px;
+	border-color: #b32811;
+	background-color: #cb3f28;
+	border-radius: 50px;
+}
+
+
+/*===== 話題精選 =====*/
+.topic {
+	width: 100%;
+	height: 465px;
+    background-image: url("../images/bn-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.topic:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	opacity: 0.1;
+	z-index: 1;
+}
+
+.topic-box {
+	width: 500px;
+	color: #fff;
+	margin-left: 10%;
+	z-index: 5;
+}
+
+.topic-box span {
+    display: inline-block;
+    padding: 6px 13px 5px;
+    background-color: #e19619;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.topic-box h2 {
+	color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+	transition: all 0.2s ease;
+}
+
+.topic-box p {
+	color: #fff;
+	line-height: 30px;
+	transition: all 0.2s ease;
+	padding-top: 10px;
+}
+
+.topic-box a:hover h2, .topic-box a:focus h2, .topic-box a:active h2,
+.topic-box a:hover p, .topic-box a:focus p, .topic-box a:active p {
+	color: #e19619;
+}
+
+
+/*===== 募集辦法 =====*/
+.method {
+    margin-top: 50px;
+}
+
+.rule {
+	text-align: left;
+}
+
+.rule li {
+	line-height: 30px;
+	padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+.rule a {
+	color: #cb3f28;
+	text-decoration: underline;
+}
+
+.rule span {
+	color: #cb3f28;
+}
+
+.rule img {
+	width: 30vw;
+}
+
+.table {
+	margin-top: 20px;
+}
+
+
+/*===== 得獎公告 =====*/
+.announ {
+    margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.well p {
+	line-height: 36px;
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 0;
+}
+
+
+/*===== 分頁 =====*/
+.pagination {
+	margin-top: 30px;
+}
+
+.pagination > li > a {
+	color: #333;
+	border: 0;
+}
+
+.pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > a:active {
+	color: #000;
+	border-radius: 5px;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover {
+	background-color: #8a8a8a;
+	border-color: #8a8a8a;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+	.rule img {
+		width: 55vw;
+	}
+
+	.recipe-box .thumbnail a img {
+		height: 190px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.recipe-box .thumbnail a img {
+		height: 140px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.rule img {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.bento, .recipe, .method, .announ {
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+
+	.col-xs-6 {
+	    padding-left: 5px;
+	    padding-right: 5px;
+	}
+
+	.thumbnail {
+		margin-bottom: 25px;
+	}
+
+	.recipe-box .thumbnail a img {
+		height: 215px;
+	}
+
+	.btn-more {
+		width: 200px;
+		font-size: 18px;
+		padding: 10px 0 8px;
+		margin-top: 10px;
+	}
+
+	.votebox {
+		margin-bottom: 0;
+	}
+
+	.votebox .author {
+		display: inline-block;
+		width: 100%;
+		float: none;
+	}
+
+	.votebox .vote {
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+		float: none;
+	}
+
+	.topic {
+		margin-top: 0;
+		margin-bottom: 30px;
+	}
+
+	.topic:after {
+		opacity: 0.5;
+	}
+
+	.topic-box {
+		margin-left: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.recipe-box .thumbnail a img {
+		height: 155px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.recipe-box .thumbnail a img {
+		height: 135px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.recipe-box .thumbnail a img {
+		height: 100px;
+	}
+}
+
+
+/*===== Right =====*/
+.right {
+	position: fixed;
+	right: 15px;
+	bottom: 30px;
+	z-index: 2;
+}
+
+.right-box {
+	display: block;
+	background-image: url("../images/right-0.png");
+	width: 165px;
+	height: 120px;
+	background-size: cover;
+	position: relative;
+}
+
+.knife, .spoon {
+	z-index: 10;
+	position: absolute;
+}
+
+.knife {
+	left: 0;
+	bottom: 15px;
+
+	animation-name: tossing;
+	-webkit-animation-name: tossing;
+	animation-duration: 0.65s;
+	-webkit-animation-duration: 0.65s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.knife img {
+	display: block;
+	width: 65px;
+	background-size: cover;
+}
+
+.spoon {
+	right: -8px;
+	bottom: 15px;
+
+	animation-name: tossing;
+	-webkit-animation-name: tossing;
+	animation-duration: 0.65s;
+	-webkit-animation-duration: 0.65s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.spoon img {
+	display: block;
+	width: 55px;
+	background-size: cover;
+}
+	@keyframes tossing {
+		0% {
+			transform: rotate(-4deg);	
+		}
+		50% {
+			transform: rotate(4deg);
+		}
+		100% {
+			transform: rotate(-4deg);	
+		}						
+	}
+	@-webkit-keyframes tossing {
+		0% {
+			-webkit-transform: rotate(-4deg);	
+		}
+		50% {
+			-webkit-transform: rotate(4deg);
+		}
+		100% {
+			-webkit-transform: rotate(-4deg);	
+		}				
+	}
+
+a:hover .knife, a:hover .spoon {
+	animation-duration: 0s;
+	-webkit-animation-duration: 0s;
+}
+
+.right {
+	position: fixed;
+	right: 15px;
+	bottom: 30px;
+	z-index: 2;
+}
+
+.text, .gift {
+    text-align: center;
+}
+
+.text img {
+	width: 5.5vw;
+}
+
+.gift {
+    margin-top: -10px;
+
+    animation-name: tossing;
+	-webkit-animation-name: tossing;
+	animation-duration: 0.65s;
+	-webkit-animation-duration: 0.65s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.gift img {
+    width: 6.5vw;
+}
+
+.contribute {
+    display: block;
+    width: 5.5vw;
+    height: auto;
+    padding-bottom: 70%;
+    background-image: url("../images/right-3-3.png");
+    background-size: cover;
+    margin: auto;
+}
+
+a:hover .gift{
+	animation-duration: 0s;
+	-webkit-animation-duration: 0s;
+}
+
+a:hover .contribute {
+    background-image: url("../images/right-3-3a.png");
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+	.text img {
+	    width: 7.5vw;
+	}
+	.gift img {
+	    width: 10.5vw;
+	}
+	.contribute {
+	    width: 6.5vw;
+	    padding-bottom: 71%;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.right {
+		bottom: 15px;
+	}
+	.text img {
+	    width: 8.5vw;
+	}
+	.gift img {
+	    width: 12.5vw;
+	}
+	.contribute {
+	    width: 8.5vw;
+	    padding-bottom: 73%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.right {
+		right: 5px;
+		bottom: 10px;
+	}
+	.text img {
+	    width: 15.5vw;
+	}
+	.gift {
+		animation-duration: 0s;
+		-webkit-animation-duration: 0s;
+	}
+	.gift img {
+	    width: 21.5vw;
+	}
+	.contribute {
+	    width: 13.5vw;
+	    padding-bottom: 55%;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	.text img {
+	    width: 18.5vw;
+	}
+	.gift img {
+	    width: 21.5vw;
+	}
+	.contribute {
+	    width: 18.5vw;	    
+    	padding-bottom: 70%;
+	}
+}
+
+/*===== Footer =====*/
+footer {
+	background-color: #fdf6e9;
+}
+footer p {
+	font-size: 14px;
+	padding: 10px 0;
+	margin: 0;
+}
+
+
+/*===== 隱私權條款視窗 =====*/
+.modal-overlay {
+    display: none;
+    background-color: #000;
+    width: 1903px;
+    height: 3000px;
+    opacity: 0.6;
+    z-index: 10050;
+    position: fixed;
+    top: 0;
+}
+
+.modal-overlay.active {
+	display: block;
+}
+
+.modal-privacy {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10051;
+}
+
+.privacy {
+    display: block;
+    width: 500px;
+    height: auto;
+    background-color: #FFF;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.modal-privacy  p {
+    font-size: 18px;
+    line-height: 28px;
+    clear: both;
+}
+
+.modal-privacy a {
+    color: rgb(0, 0, 238);
+} 
+
+.modal-privacy .btn-danger {
+	width: auto;
+    background-color: #d9534f;
+	border-color: #d43f3a;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-privacy.notice {
+	display: none;
+}
+
+.modal-privacy.notice.active {
+	display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .privacy {
+        width: 100%;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+

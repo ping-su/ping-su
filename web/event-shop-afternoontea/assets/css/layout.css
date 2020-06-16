@@ -1,0 +1,509 @@
+body {
+	font-family: "Montserrat", Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+.nav-top { 
+  box-shadow: none !important;
+}
+
+.navbar.nav-top a {
+	color: #fff;
+	font-size: 16px !important; 
+	font-weight: bold;
+}
+
+.navbar.nav-top a:hover {
+	text-decoration: underline;
+}
+
+.nav-lesson {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.nav-btn {
+		display: none;
+	}
+
+	.nav-lesson {
+	display: block;
+	}
+}
+
+/*--- Top Banner ---*/
+.topbanner {
+	width: 47%;
+	margin: 0 auto;
+}
+
+.top-a {
+	width: 3.75%;
+	z-index: 3;
+	position: absolute;
+	top: 18%;
+	left: 32%;
+
+	-webkit-animation-name: tossing;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.top-b {
+	width: 4.95%;
+	z-index: 4;
+	position: absolute;
+	top: 22%;
+	right: 32.55%;
+
+	-webkit-animation-name: tossing;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+.top-c {
+	width: 29%;
+	margin: 0 auto;
+	margin-top: -13px;
+}
+
+@keyframes tossing {
+	0% {
+		transform: rotate(-10deg);	
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);	
+	}						
+}
+
+@-webkit-keyframes tossing {
+	0% {
+		transform: rotate(-10deg);	
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(-10deg);	
+	}				
+}
+
+.full-x {
+	width: 100%;
+}
+
+.btn-primary {
+	padding: 8px 18px;
+}
+
+.btn {
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 736px) {
+	.template-page .page-header {
+		height: 33.5vh;
+		min-height: 46.5vh;
+	}
+
+	.page-header .container > .content-center {
+		top: 60%;	
+	}
+
+	.topbanner {
+		width: 55%;
+	}
+
+	.top-a {
+		width: 4.55;
+		left: 29%;
+	}
+
+	.top-b {
+		width: 5.85%;
+		right: 29.55%;
+	}
+
+	.top-c {
+		width: 43%;
+		margin-top: -7px;
+	}
+	a.navbar-brand img {
+		max-width: 80%;
+	}
+
+	.navbar.navbar-transparent {
+		padding-top: 10px;
+	}
+
+	.hidden-sm {
+		display: block;
+	}
+}
+
+/*------ Section -----*/
+.section {
+	padding: 70px 0 20px;
+}
+/*--- Preface ---*/
+.preface {
+	margin-bottom: 30px;
+}
+
+.preface .title {
+	font-size: 2.2em;
+	color: #f96332;
+}
+
+.preface h5 {
+	font-size: 1.45em;
+}
+
+@media screen and (max-width: 736px) {
+	.preface h5 {
+		font-size: 1.35em
+	}
+}
+/*------ End Section -----*/
+
+/*------ Section01 -----*/
+.section01 {
+	padding-bottom: 50px;
+}
+
+.section01 a, .section02 a, .section03 a{
+	text-decoration: none;
+}
+/*--- Content ---*/
+
+.caption {
+	padding: 15px;
+}
+
+.caption h4 {
+	font-weight: bold;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+
+.caption p {
+	font-size: 15px;
+	color: #555555;
+}
+
+.caption a {
+	color: #fff !important;
+}
+
+.contentbox {
+	margin-bottom: 25px;
+}
+
+.contentbox .col-md-6 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.contentbox img {
+	width: 100%;
+}
+
+.contentbox .caption {
+	padding: 3px 20px;
+}
+
+.contentbox .caption h4 {
+	font-size: 1.35em;
+}
+
+.contentbox .caption p {
+	font-size: 15px;
+}
+
+@media screen and (max-width: 736px) {
+	.contentbox {
+		margin: 15px 0 0;
+	}
+
+	.contentbox .caption h4 {
+		font-size: 1.714em;
+	}
+
+	.contentbox .caption p {
+		font-size: 16px;
+	}
+}
+/*------ End Section01 -----*/
+
+/*------ Section02 -----*/
+.section02, .section03 {
+	padding: 30px;
+	margin-bottom: 50px;
+}
+
+.section02 h3, .section03 h3 {
+	font-weight: bold;
+	color: #f96332;
+	text-align: center;
+	padding-bottom: 30px;
+	margin-bottom: 0;
+}
+
+.section02 h5 {
+	font-size: 1.45em;
+	font-weight: bold;
+	color: #555555;
+}
+
+.section02 p {
+	line-height: 1.5em;
+	color: #787878;
+	margin-bottom: 0;
+} 
+
+.section02 .thumbnail:hover {
+	text-decoration: none;
+}
+
+.section02 .caption .price {
+	font-size: 24px;
+	line-height: 1.85em;
+	color: #2c2c2c;
+}
+
+@media screen and (max-width: 736px) {
+	.section02 {
+		padding: 0;
+	}
+
+	.section02 .thumbnail {
+		border: none;
+		margin-bottom: 10px;
+	}
+
+	.section02 h3 {
+		padding: 30px;
+	}
+
+	.section02 .caption {
+		padding: 5px;
+	}
+
+	.section02 .caption h5 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 1.15em;
+	}
+
+	.section02 .caption .price {
+		line-height: 1.5em;
+	}
+
+	.hidden-xs {
+		display: none;
+	}
+
+	.section02 .col-6 {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+/*------ End Section02 -----*/
+
+/*------ Section03 -----*/
+.video {
+	margin-bottom: 30px;
+}
+
+.videotext {
+	padding: 30px;
+}
+
+.section03 h4 {
+	font-weight: bold;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	margin-bottom :15px;
+	border-bottom: 1px solid #eebaa9;
+}
+
+.section03 p {
+	font-size: 16px;
+	line-height: 36px;
+	color: #555555;
+}
+
+.recipe .caption {
+	padding: 0;
+}
+
+.recipe h4 {
+	font-size: 1.35em;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.recipe p {
+	font-size: 15px;
+	line-height: 26px;
+}
+
+@media screen and (max-width: 736px) {
+	.section03 {
+		padding: 0;
+	}
+
+	.video {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.videotext {
+		padding: 15px 30px;
+	}
+
+	.section03 h4 {
+		border: none;
+		padding-bottom: 0;
+	}
+
+	.section03 p {
+		line-height: 1.61em;
+	}
+
+	.recipe .caption {
+		padding: 15px;
+	}
+
+	.recipe h4 {
+		font-size: 1.714em;
+	}
+
+	.recipe p {
+		font-size: 16px;
+	}
+
+	.recipebox {
+		padding-top: 15px;
+	}
+}
+/*------ End Section03 -----*/
+
+/*------ Next -----*/
+.next {
+	background-attachment: fixed !important;
+	background-size: cover !important;
+	background:rgba(0, 0, 0, 0) url(../../images/next.jpg) repeat-y fixed center center / cover ;
+	padding-top: 120px;
+	padding-bottom: 120px;
+	margin: 50px 0 15px;
+}
+
+.next a:hover {
+	opacity: 0.9;
+}
+
+/*------ End Next -----*/
+
+/*------ Right -----*/
+.rightbox {
+	position: fixed;
+	top: 40%;
+	right: 15px;
+}
+
+.rightbox li {
+	margin: 20px 0;
+	list-style: none;
+}
+
+.rightbox li a {
+	display: block;
+	width: 105px;
+	height: 105px;
+	background-color: #4b9140;
+	border-radius: 500px;
+	padding: 5px;
+}
+
+.rightbox li a:hover {
+	background-color: #38782e;
+	border: 5px solid rgba(56, 120, 46, 0.8);
+}
+
+@media screen and (max-width: 1024px) {
+	.rightbox {
+		display: none;
+	}
+}
+
+/*------ End Right -----*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.page-header .container > .content-center {
+		top: 60%;
+	}
+
+	.contentbox .caption {
+		padding: 0 20px 10px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.contentbox .caption {
+		padding: 0 20px 10px;
+	}
+
+	.contentbox .caption p {
+		overflow:hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+}
+
+/*------ Index -----*/
+.jumbotron-bg {
+	background-image: url(../../images/bg.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	margin-bottom: 0;
+}
+
+.index-brand {
+	position: absolute;
+	top: 2%;
+	left: 0;
+	z-index: 2;
+}
+
+.jumbotron-bg .bg-top {
+	margin: 10% 0 0;
+}
+
+.jumbotron-bg ul {
+	padding-left: 0;
+	margin: 50px 0;
+}
+
+.jumbotron-bg ul li {
+	list-style: none;
+}
+
+.jumbotron-bg ul li a {
+	display: block;
+	width: 170px;
+	height: 170px;
+	background-color: #4b9140;
+	border-radius: 500px;
+	margin: 0 auto;
+	text-align: center;
+	border: 10px solid rgba(255, 255, 255, 0);
+}
+
+.jumbotron-bg ul li a:hover {
+	background-color: #38782e;
+	border: 10px solid rgba(255, 255, 255, 0.2);
+}
+/*------ End Index -----*/

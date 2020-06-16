@@ -1,0 +1,285 @@
+body {
+	font-size: 20px;
+	line-height: 26px;
+	font-family: Arial, "微軟正黑體", Helvetica, sans-serif;
+	letter-spacing: 1.5px;
+}
+header {
+    width: 100%;
+    height: 55vh;
+	background-image: url("../images/top.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    flex-wrap: wrap;
+    position: relative;
+    max-height: 500px;
+    min-height: 350px;
+}
+.logo {
+	position: absolute;
+	top: 45px;
+	right: 10px;
+}
+.logo img {
+	width: 11.5vw;
+}
+.top {
+	height: 100%;
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h1 {
+    width: 500px;
+    height: auto;
+    padding-bottom: 48%;
+    background-image: url("../images/word-a.png");
+    background-size: cover;
+    text-indent: -9999px;
+	margin: 0;
+}
+.info {
+	margin: auto;
+	text-align: center
+}
+.date, .add {
+	display: inline-block;
+	margin-top: 20px;
+}
+.date img, .add img {
+	width: 235px;
+}
+.word {
+	z-index: 5;
+	position: absolute;
+	top: 25%;
+	right: 35%;
+}
+.word img {
+	width: 7.5vw;
+}
+article {
+	background-image: url("../images/bg.jpg");
+}
+.title {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+.title img {
+	width: 10vw;
+}
+span.red {
+	color: #f00;
+	font-weight: bold;
+}
+.teacher-img {
+	text-align: center;
+}
+.teacher-img img {
+	width: 15.5vw;
+	border-radius: 50%;
+}
+.teacher h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.teacher p {
+	font-size: 16px;
+	line-height: 30px;
+}
+.hagoromo {
+	display: block;
+	width: 100%;
+    height: auto;
+	background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: left center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+.hagoromo-box {
+	width: 750px;
+	padding: 80px 0;
+	margin-left: 15%;
+}
+.hagoromo-tit {
+	margin-bottom: 25px;
+}
+.hagoromo-tit img {
+	width: 26.5vw;
+}
+.hagoromo-box p {
+	font-size: 18px;
+	line-height: 36px;
+	margin: 0;
+}
+.gift p {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 35px;
+}
+.gift .bottom {
+	display: block;
+	width: 100%;
+	padding-bottom: 35%;
+	background-image: url("../images/bottom.png");
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+}
+.gift .bottom p {
+	font-size: 14px;
+	color: #fff;
+	font-weight: normal;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    margin-bottom: 0;
+}
+.right {
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+}
+
+/*========== 平板區 ==========*/
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	.logo {
+		top: 25px;
+	}
+	.word {
+	    top: 25%;
+	    right: 25%;
+	}
+	.word img {
+	    width: 12.5vw;
+	}
+	.title img {
+	    width: 13vw;
+	}
+	.teacher-img img {
+	    width: 25.5vw;
+	}
+	.hagoromo {
+	    background-position: center center;
+	}
+	.hagoromo-box {
+	    width: 550px;
+	    padding: 50px 0;
+	    margin-left: 5%;
+	}
+	.hagoromo-tit img {
+	    width: 36.5vw;
+	}
+}
+
+/*========== 手機區 ==========*/
+@media screen and (max-width: 767px) {
+	header {
+		height: 35vh;
+	}
+	.logo {
+		top: 15px;
+		height: 5px;
+	}
+	.logo img {
+		width: 20vw;
+	}
+	h1 {
+		width: 400px;
+		padding-bottom: 46%;
+	}
+	.word {
+		top: 22%;
+		right: 18%;
+	}
+	.word img {
+	    width: 15.5vw;
+	}
+	.title {
+		margin-top: 30px;
+	}
+	.title img {
+	    width: 25vw;
+	}
+	.teacher-img img {
+	    width: 300px;
+	}
+	.hagoromo {
+		background-image: none;
+		margin-bottom: 0;
+	}
+	.hagoromo-box:before {
+	    display: block;
+	    content: "";
+	    width: 100%;
+	    height: auto;
+	    padding-bottom: 39.06%;
+	    background-image: url(../images/banner-m.jpg);
+	    background-size: cover;
+	    background-position: top right;
+	}
+	.hagoromo-box {
+	    width: 100%;
+	    padding: 0;
+	    margin-left: 0;
+	}
+	.hagoromo-tit {
+	    display: none;
+	}
+	.hagoromo-box p {
+		font-size: 16px;
+		padding: 15px;
+	}
+	.gift p {
+		line-height: 36px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.gift .bottom {
+		padding-bottom: 55%;
+	}
+	.gift .bottom p {
+    	font-size: 12px;
+    	line-height: 12px;
+    	letter-spacing: 0;
+    	margin-bottom: 3px;
+    	padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+	.date img, .add img {
+	    width: 195px;
+	}
+	.word {
+	    top: 25%;
+	    right: 16%;
+	}
+	.word img {
+	    width: 16.5vw;
+	}
+	.title img {
+	    width: 30vw;
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+	h1 {
+	    width: 100%;
+	    padding-bottom: 46%;
+	}
+	.add {
+		margin-top: 5px;
+	}
+	.word {
+		display: none;
+	}
+}

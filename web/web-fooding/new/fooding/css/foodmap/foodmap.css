@@ -1,0 +1,2679 @@
+/* ----- food map-主頁 開始 ----- */
+
+.foodmap {
+    padding-top: 20px;
+}
+
+.foodmap > .foodmap-select {
+    margin: 0 120px;
+}
+
+.maptext {
+    font-size: 16.5px;
+    color: #000 !important;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.foodmap > .foodmap-select > .map-necessary {
+    font-size: 12px;
+    color: #d9534f;
+}
+
+.map-search {
+    text-align: right;
+}
+
+.map-search > .btn-info {
+    background-color: #f4f4f4;
+    width: 100px;
+    margin: 0 5px;
+}
+
+.map-search > .btn-info:hover,
+.map-search > .btn-info:active,
+.map-search > .btn-info:visited {
+    background-color: #a7a7a7;
+    border-color: #9e9e9e;
+}
+
+
+/*訊息公告*/
+
+.map-news {
+    display: inline-block;
+    width: 44px;
+    line-height: 44px;
+    background-color: #d43f3a;
+    float: left;
+}
+
+.map-news i {
+    font-size: 21px;
+    color: #FFF;
+    line-height: 44px;
+}
+
+.map-newslist {
+    background-color: #fdf3e1;
+}
+
+.map-newslist a {
+    display: inline-block;
+    width: 280px;
+    font-size: 16px;
+    line-height: 44px;
+    color: #d43f3a;
+    font-weight: bold;
+    padding: 0 14px;
+    transition: all 0.2s linear 0s;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.map-newslist a:hover {
+    color: #a52a2a;
+    text-decoration: underline;
+}
+
+
+/*點的背景*/
+
+.map-allpoint {
+    background-image:url(../../images/bg-map.png);
+    width: 1170px;
+    height: 850px;
+    position: relative;
+}
+
+.food-img {
+    display: inline-block;
+    width: 93%;
+    height: 93%;
+}
+
+
+/*點*/
+
+.recom-1 {
+    display: block;
+    width: 220px;
+    height: 175px;
+    background-image: url(../../images/line-01.png);
+    background-repeat: no-repeat;
+    background-position: 100% 53%;
+}
+
+.recom-2 {
+    display: block;
+    width: 285px;
+    height: 180px;
+    background-image: url(../../images/line-02.png);
+    background-repeat: no-repeat;
+    background-position: left 45%;
+}
+
+.recom-3 {
+    display: block;
+    width: 395px;
+    height: 165px;
+    background-image: url(../../images/line-03.png);
+    background-repeat: no-repeat;
+    background-position: 100% 80%;
+}
+
+.recom-4 {
+    display: block;
+    width: 295px;
+    height: 165px;
+    background-image: url(../../images/line-04.png);
+    background-repeat: no-repeat;
+    background-position: 100% 30%;
+}
+
+.recom-5 {
+    display: block;
+    width: 365px;
+    height: 130px;
+    background-image: url(../../images/line-05.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.recom-6 {
+    display: block;
+    width: 243px;
+    height: 165px;
+    background-image: url(../../images/line-06.png);
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.recom-7 {
+    display: block;
+    width: 268px;
+    height: 165px;
+    background-image: url(../../images/line-07.png);
+    background-repeat: no-repeat;
+    background-position: 0 39%;
+}
+
+.recom-8 {
+    display: block;
+    width: 331px;
+    height: 165px;
+    background-image: url(../../images/line-08.png);
+    background-repeat: no-repeat;
+    background-position: 0 10%;
+}
+
+.recom-9 {
+    display: block;
+    width: 146px;
+    height: 174px;
+    background-image: url(../../images/line-09.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.recom-10 {
+    display: block;
+    width: 192px;
+    height: 165px;
+    background-image: url(../../images/line-10.png);
+    background-repeat: no-repeat;
+    background-position: 10% 0;
+}
+
+.circular-img {
+    display: inline-block;
+    position: relative;
+    width: 95px;
+    height: 95px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular-img img {
+    width: auto;
+    height: 100%;
+    margin-left: -25%;
+}
+
+.recom-1 > .circular-img {
+    margin-left: 65px;
+}
+
+.recom-2 > .circular-img {
+    margin-left: 95px;
+}
+
+.recom-3 > .circular-img {
+    margin-left: 157px;
+}
+
+.recom-4 > .circular-img {
+    margin-left: 107px;
+}
+
+.recom-5 > .circular-img {
+    margin-left: 138px;
+}
+
+.recom-6 > .circular-img {
+    margin-left: 77px;
+}
+
+.recom-7 > .circular-img {
+    margin-left: 88px;
+}
+
+.recom-8 > .circular-img {
+    margin-left: 119px;
+}
+
+.recom-9 > .circular-img {
+    margin-left: 24px;
+}
+
+.recom-10 > .circular-img {
+    margin-left: 51px;
+}
+
+.recom-text {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+    padding-top: 8px;
+}
+
+.icon-setup {
+    font-size: 16px;
+}
+
+.p-north-1 {
+    position: absolute;
+    top: 100px;
+    left: 270px;
+    z-index: 1;
+}
+
+.p-north-2 {
+    position: absolute;
+    top: 65px;
+    left: 705px;
+    z-index: 2;
+}
+
+.p-central-1 {
+    position: absolute;
+    top: 230px;
+    left: 5px;
+    z-index: 3;
+}
+
+.p-central-2 {
+    position: absolute;
+    top: 415px;
+    left: 76px;
+    z-index: 4;
+}
+
+.p-south-1 {
+    position: absolute;
+    top: 573px;
+    left: 15px;
+    z-index: 5;
+}
+
+.p-south-2 {
+    position: absolute;
+    top: 707px;
+    left: 232px;
+    z-index: 6;
+}
+
+.p-east-1 {
+    position: absolute;
+    top: 391px;
+    left: 640px;
+    z-index: 7;
+}
+
+.p-east-2 {
+    position: absolute;
+    top: 596px;
+    left: 566px;
+    z-index: 8;
+}
+
+.p-other-1 {
+    position: absolute;
+    top: 196px;
+    left: 928px;
+    z-index: 4;
+}
+
+.p-other-2 {
+    position: absolute;
+    top: 495px;
+    left: 974px;
+    z-index: 4;
+}
+
+.p-north-1 a,
+.p-north-2 a,
+.p-central-1 a,
+.p-central-2 a,
+.p-south-1 a,
+.p-south-2 a,
+.p-east-1 a,
+.p-east-2 a,
+.p-other-1 a,
+.p-other-2 a {
+    display: block;
+    line-height: 30px color: #000!important;
+    text-align: center;
+}
+
+.p-north-1 a:hover,
+.p-north-2 a:hover,
+.p-central-1 a:hover,
+.p-central-2 a:hover,
+.p-south-1 a:hover,
+.p-south-2 a:hover,
+.p-east-1 a:hover,
+.p-east-2 a:hover,
+.p-other-1 a:hover .p-other-2 a:hover {
+    text-decoration: underline;
+}
+
+
+/*北部的點*/
+
+.icon-n-1 {
+    position: absolute;
+    top: 100px;
+    left: 585px;
+    z-index: 11;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-2 {
+    position: absolute;
+    top: 175px;
+    left: 616px;
+    z-index: 12;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-3 {
+    position: absolute;
+    top: 212px;
+    left: 668px;
+    z-index: 13;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-4 {
+    position: absolute;
+    top: 117px;
+    left: 694px;
+    z-index: 14;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-5 {
+    position: absolute;
+    top: 170px;
+    left: 547px;
+    z-index: 18;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-6 {
+    position: absolute;
+    top: 231px;
+    left: 477px;
+    z-index: 16;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-7 {
+    position: absolute;
+    top: 209px;
+    left: 530px;
+    z-index: 17;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-8 {
+    position: absolute;
+    top: 162px;
+    left: 664px;
+    z-index: 18;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-9 {
+    position: absolute;
+    top: 74px;
+    left: 630px;
+    z-index: 19;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-10 {
+    position: absolute;
+    top: 140px;
+    left: 596px;
+    z-index: 20;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-11 {
+    position: absolute;
+    top: 122px;
+    left: 636px;
+    z-index: 21;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-12 {
+    position: absolute;
+    top: 123px;
+    left: 543px;
+    z-index: 22;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-n-13 {
+    position: absolute;
+    top: 216px;
+    left: 594px;
+    z-index: 23;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*中區的點*/
+
+.icon-c-1 {
+    position: absolute;
+    top: 300px;
+    left: 554px;
+    z-index: 37;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-2 {
+    position: absolute;
+    top: 334px;
+    left: 518px;
+    z-index: 38;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-3 {
+    position: absolute;
+    top: 300px;
+    left: 453px;
+    z-index: 39;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-4 {
+    position: absolute;
+    top: 364px;
+    left: 360px;
+    z-index: 40;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-5 {
+    position: absolute;
+    top: 263px;
+    left: 446px;
+    z-index: 41;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-6 {
+    position: absolute;
+    top: 358px;
+    left: 412px;
+    z-index: 42;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-7 {
+    position: absolute;
+    top: 414px;
+    left: 394px;
+    z-index: 43;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-8 {
+    position: absolute;
+    top: 318px;
+    left: 419px;
+    z-index: 44;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-9 {
+    position: absolute;
+    top: 425px;
+    left: 484px;
+    z-index: 45;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-10 {
+    position: absolute;
+    top: 385px;
+    left: 528px;
+    z-index: 46;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-11 {
+    position: absolute;
+    top: 382px;
+    left: 447px;
+    z-index: 47;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-12 {
+    position: absolute;
+    top: 285px;
+    left: 514px;
+    z-index: 48;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-c-13 {
+    position: absolute;
+    top: 344px;
+    left: 475px;
+    z-index: 49;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*南區的點*/
+
+.icon-s-1 {
+    position: absolute;
+    top: 570px;
+    left: 430px;
+    z-index: 50;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-2 {
+    position: absolute;
+    top: 513px;
+    left: 445px;
+    z-index: 51;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-3 {
+    position: absolute;
+    top: 664px;
+    left: 451px;
+    z-index: 52;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-4 {
+    position: absolute;
+    top: 717px;
+    left: 466px;
+    z-index: 53;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-5 {
+    position: absolute;
+    top: 565px;
+    left: 372px;
+    z-index: 54;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-6 {
+    position: absolute;
+    top: 493px;
+    left: 359px;
+    z-index: 55;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-7 {
+    position: absolute;
+    top: 526px;
+    left: 390px;
+    z-index: 56;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-8 {
+    position: absolute;
+    top: 616px;
+    left: 403px;
+    z-index: 57;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-9 {
+    position: absolute;
+    top: 609px;
+    left: 450px;
+    z-index: 58;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-10 {
+    position: absolute;
+    top: 565px;
+    left: 468px;
+    z-index: 59;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-11 {
+    position: absolute;
+    top: 489px;
+    left: 479px;
+    z-index: 60;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-12 {
+    position: absolute;
+    top: 526px;
+    left: 485px;
+    z-index: 61;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-s-13 {
+    position: absolute;
+    top: 480px;
+    left: 407px;
+    z-index: 62;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*東區的點*/
+
+.icon-e-1 {
+    position: absolute;
+    top: 591px;
+    left: 506px;
+    z-index: 63;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-2 {
+    position: absolute;
+    top: 497px;
+    left: 526px;
+    z-index: 64;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-3 {
+    position: absolute;
+    top: 363px;
+    left: 587px;
+    z-index: 65;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-4 {
+    position: absolute;
+    top: 537px;
+    left: 556px;
+    z-index: 66;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-5 {
+    position: absolute;
+    top: 412px;
+    left: 579px;
+    z-index: 67;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-6 {
+    position: absolute;
+    top: 449px;
+    left: 546px;
+    z-index: 68;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-7 {
+    position: absolute;
+    top: 396px;
+    left: 618px;
+    z-index: 69;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-8 {
+    position: absolute;
+    top: 503px;
+    left: 571px;
+    z-index: 70;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-9 {
+    position: absolute;
+    top: 330px;
+    left: 630px;
+    z-index: 71;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-10 {
+    position: absolute;
+    top: 268px;
+    left: 644px;
+    z-index: 72;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-11 {
+    position: absolute;
+    top: 293px;
+    left: 611px;
+    z-index: 73;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-12 {
+    position: absolute;
+    top: 464px;
+    left: 595px;
+    z-index: 74;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-e-13 {
+    position: absolute;
+    top: 326px;
+    left: 584px;
+    z-index: 75;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*其他的點*/
+
+.icon-o-1 {
+    position: absolute;
+    top: 380px;
+    left: 973px;
+    z-index: 63;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-2 {
+    position: absolute;
+    top: 428px;
+    left: 1003px;
+    z-index: 64;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-3 {
+    position: absolute;
+    top: 453px;
+    left: 941px;
+    z-index: 65;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-4 {
+    position: absolute;
+    top: 437px;
+    left: 905px;
+    z-index: 66;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-5 {
+    position: absolute;
+    top: 382px;
+    left: 1008px;
+    z-index: 67;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-6 {
+    position: absolute;
+    top: 358px;
+    left: 1033px;
+    z-index: 68;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-7 {
+    position: absolute;
+    top: 414px;
+    left: 935px;
+    z-index: 69;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-8 {
+    position: absolute;
+    top: 417px;
+    left: 969px;
+    z-index: 70;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-9 {
+    position: absolute;
+    top: 380px;
+    left: 934px;
+    z-index: 71;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-10 {
+    position: absolute;
+    top: 447px;
+    left: 975px;
+    z-index: 72;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-11 {
+    position: absolute;
+    top: 395px;
+    left: 1038px;
+    z-index: 73;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-12 {
+    position: absolute;
+    top: 472px;
+    left: 910px;
+    z-index: 74;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-o-13 {
+    position: absolute;
+    top: 345px;
+    left: 997px;
+    z-index: 75;
+    cursor: pointer;
+    display: none;
+}
+
+.icon-active {
+    display: block;
+}
+
+
+/*每個點的表格*/
+
+.options h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.options > .table > tbody > tr > td {
+    padding: 10px 6px;
+}
+
+.options > .table > tbody > tr > td > .foodname {
+    color: #000;
+    transition: all 0.2s linear 0s;
+}
+
+.options > .table > tbody > tr > td > .foodname:hover {
+    color: #767676;
+    transition: all 0.2s linear 0s;
+}
+
+.options > .table > tbody > tr > td > a {
+    color: #666;
+    transition: all 0.2s linear 0s;
+}
+
+.options > .table > tbody > tr > td > a:hover {
+    color: #CCC;
+}
+
+
+/* ----- food map-主頁 結束 ----- */
+
+
+/* ----- food map-分頁 開始 ----- */
+
+.foodmap-shop {
+    display: inline-block;
+    padding: 10px 30px;
+    min-width: 1180px;
+}
+
+.bg-map-north {
+    background-image: url(../../images/bg-map-north.png);
+    background-repeat: no-repeat;
+}
+
+.bg-map-central {
+    background-image: url(../../images/bg-map-central.png);
+    background-repeat: no-repeat;
+}
+
+.bg-map-south {
+    background-image: url(../../images/bg-map-south.png);
+    background-repeat: no-repeat;
+}
+
+.bg-map-east {
+    background-image: url(../../images/bg-map-east.png);
+    background-repeat: no-repeat;
+}
+
+.bg-map-other {
+    background-image: url(../../images/bg-map-other.png);
+    background-repeat: no-repeat;
+}
+
+
+/*左欄-上選單*/
+
+.mapshop-select > .col-sm-7 {
+    padding: 0;
+}
+
+.mapshop-select > .col-sm-7 h3 {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.mapshop-select > .col-sm-5 {
+    padding: 0;
+    margin-top: 20px;
+}
+
+
+/*左欄-下欄位*/
+
+.mapshop-left {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.mapshop-left h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 0 0 15px;
+    border-bottom: 1px solid #CCC;
+}
+
+.mapshop-left > .map-brand > .col-sm-6 {
+    padding: 3px;
+}
+
+.map-brand img {
+    padding: 10px;
+}
+
+.map-brand > .map-brandtext {
+    padding: 10px;
+}
+
+.map-brand > .map-brandtext p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000 !important;
+    margin-top: 10px;
+}
+
+.map-brand > .map-brandtext span {
+    font-size: 13.5px;
+}
+
+.mapshop-left .map-shopbox > .caption {
+    padding: 15px 3px 0;
+}
+
+
+/*分頁點*/
+
+
+/*左欄*/
+
+.foodmap-shop .food-img {
+    width: 36px;
+    height: 36px;
+}
+
+.bg-box {
+    height: 730px;
+}
+
+.point-n-1 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-n-2 {
+    position: absolute;
+    top: 375px;
+    left: 60px;
+    display: none;
+}
+
+.point-n-3 {
+    position: absolute;
+    top: 340px;
+    left: 85px;
+    display: none;
+}
+
+.point-n-4 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-n-5 {
+    position: absolute;
+    top: 375px;
+    left: 60px;
+    display: none;
+}
+
+.point-n-6 {
+    position: absolute;
+    top: 340px;
+    left: 85px;
+    display: none;
+}
+
+.point-n-7 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-n-8 {
+    position: absolute;
+    top: 375px;
+    left: 60px;
+    display: none;
+}
+
+.point-n-9 {
+    position: absolute;
+    top: 340px;
+    left: 85px;
+    display: none;
+}
+
+.point-n-10 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-n-11 {
+    position: absolute;
+    top: 375px;
+    left: 60px;
+    display: none;
+}
+
+.point-n-12 {
+    position: absolute;
+    top: 340px;
+    left: 85px;
+    display: none;
+}
+
+.point-n-13 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-c-1 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-c-2 {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    display: none;
+}
+
+.point-c-3 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-c-4 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-c-5 {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    display: none;
+}
+
+.point-c-6 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-c-7 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-c-8 {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    display: none;
+}
+
+.point-c-9 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-c-10 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-c-11 {
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    display: none;
+}
+
+.point-c-12 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-c-13 {
+    position: absolute;
+    top: 318px;
+    left: 65px;
+    display: none;
+}
+
+.point-s-1 {
+    position: absolute;
+    top: 155px;
+    left: 120px;
+    display: none;
+}
+
+.point-s-2 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-s-3 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-s-4 {
+    position: absolute;
+    top: 155px;
+    left: 120px;
+    display: none;
+}
+
+.point-s-5 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-s-6 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-s-7 {
+    position: absolute;
+    top: 155px;
+    left: 120px;
+    display: none;
+}
+
+.point-s-8 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-s-9 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-s-10 {
+    position: absolute;
+    top: 155px;
+    left: 120px;
+    display: none;
+}
+
+.point-s-11 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-s-12 {
+    position: absolute;
+    top: 285px;
+    left: 15px;
+    display: none;
+}
+
+.point-s-13 {
+    position: absolute;
+    top: 155px;
+    left: 120px;
+    display: none;
+}
+
+.point-e-1 {
+    position: absolute;
+    top: 425px;
+    left: 105px;
+    display: none;
+}
+
+.point-e-2 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-e-3 {
+    position: absolute;
+    top: 155px;
+    left: 199px;
+    display: none;
+}
+
+.point-e-4 {
+    position: absolute;
+    top: 425px;
+    left: 105px;
+    display: none;
+}
+
+.point-e-5 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-e-6 {
+    position: absolute;
+    top: 155px;
+    left: 199px;
+    display: none;
+}
+
+.point-e-7 {
+    position: absolute;
+    top: 425px;
+    left: 105px;
+    display: none;
+}
+
+.point-e-8 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-e-9 {
+    position: absolute;
+    top: 155px;
+    left: 199px;
+    display: none;
+}
+
+.point-e-10 {
+    position: absolute;
+    top: 425px;
+    left: 105px;
+    display: none;
+}
+
+.point-e-11 {
+    position: absolute;
+    top: 320px;
+    left: 220px;
+    display: none;
+}
+
+.point-e-12 {
+    position: absolute;
+    top: 155px;
+    left: 199px;
+    display: none;
+}
+
+.point-e-13 {
+    position: absolute;
+    top: 425px;
+    left: 105px;
+    display: none;
+}
+
+.point-o-1 {
+    position: absolute;
+    top: 355px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-2 {
+    position: absolute;
+    top: 265px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-3 {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+    display: none;
+}
+
+.point-o-4 {
+    position: absolute;
+    top: 355px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-5 {
+    position: absolute;
+    top: 265px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-6 {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+    display: none;
+}
+
+.point-o-7 {
+    position: absolute;
+    top: 355px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-8 {
+    position: absolute;
+    top: 265px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-9 {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+    display: none;
+}
+
+.point-o-10 {
+    position: absolute;
+    top: 355px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-11 {
+    position: absolute;
+    top: 265px;
+    left: 55px;
+    display: none;
+}
+
+.point-o-12 {
+    position: absolute;
+    top: 195px;
+    left: 20px;
+    display: none;
+}
+
+.point-o-13 {
+    position: absolute;
+    top: 355px;
+    left: 55px;
+    display: none;
+}
+
+.point-active {
+    display: block;
+}
+
+.map-return {
+    position: absolute;
+    bottom: 17px;
+}
+
+.backmap .col-xs-6 {
+ 	padding-left: 0;
+    padding-right: 0;
+    margin: 15px 0;
+}
+.btn-backmap {
+    width: 130px;
+    color: #000;
+    background-color: #f4f4f4;
+    border: 1px solid #d4d4d4;
+}
+
+
+/*右欄*/
+
+.mapshop-right {
+    max-height: 685px;
+    border: 1px solid #CCC;
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+.map-shopbox {
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-shopbox > img {
+    height: auto;
+    overflow: hidden;
+}
+
+.map-shopbox > .caption {
+    padding: 15px 3px;
+}
+
+.map-shopname {
+    width: 100%;
+    font-weight: bold;
+    color: #000;
+}
+
+.map-shopname:hover {
+    color: #777;
+}
+
+ .map-select {
+    height: 34px;
+    margin-bottom: 10px;
+ }
+
+.map-qty > p {
+    display: inline-block;
+    font-size: 14.5px;
+    color: #000 !important;
+}
+
+.map-selectqty {
+    width: 65%;
+    height: 34px;
+}
+
+.map-buy {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.map-buy-lg a,
+.map-buy-lg button {
+    width: 150px;
+}
+
+.map-shopping {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.map-shopping > .map-selectqty {
+    width: 40%;
+}
+
+.map-shopping p {
+    display: inline-block;
+    font-size: 14.5px;
+    color: #000 !important;
+}
+
+.mapshop-right > .map-shopbox > .caption > .col-sm-12 {
+    padding: 0 !important;
+}
+
+.caption > .map-shopping > .qty {
+    line-height: 28px;
+    background-color: #fff;
+    border: 1px solid #e3e1d6;
+    border-radius: 3px;
+    width: 2.5em;
+    text-align: center;
+}
+
+.caption > .map-shopping a {
+    line-height: 18px;
+    margin-top: -4px;
+    padding: 6px;
+}
+
+.caption > .map-shopping > .btn {
+    padding: 6px 8px;
+}
+
+.btn-cart {
+    display: none;
+}
+
+.btn-end {
+    background-color: #6a6a6a;
+    border-color: #5e5e5e;
+    color: #FFF;
+    display: none;
+}
+
+.btn-lack {
+    background-color: #eba900;
+    border-color: #cc9300;
+    color: #FFF;
+    display: none;
+}
+
+.btn-active {
+    display: inline-block;
+}
+
+.map-fb {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    z-index: 1;
+}
+
+.map-fb:hover,
+.map-fb:active {
+    color: #FFF;
+    background-color: #337ab7;
+}
+
+.product-over {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    z-index: 99;
+    padding: 23%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-over-active {
+    display: block;
+}
+
+    
+
+/* ----- food map-分頁 結束 ----- */
+
+
+/* ----- 手機版型 開始 ----- */
+
+@media screen and (max-width: 768px) {
+    /*主頁*/
+    /*主頁-燈箱(開始)*/
+    .overlay-fancybox {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        z-index: 1099;
+        position: fixed;
+        top: 0;
+    }
+    .overlay-contentbox {
+        background-color: #FFF;
+        margin: 10px 0 0 0;
+        border-radius: 3px;
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.6);
+    }
+    .overlay-contentbox .close {
+        margin: 5px;
+    }
+    .map-recommend {
+        position: fixed;
+        bottom: 10px;
+        right: 5px;
+        z-index: 9999;
+    }
+    .btn-recommend {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.6);
+        background-color: #668830;
+        border-color: #668830;
+        padding: 0;
+    }
+    .btn-recommend p {
+        color: #FFF !important;
+        margin: 0 auto;
+    }
+    .btn-recommend:hover,
+    .btn-recommend:focus,
+    .btn-recommend:active,
+    .btn-recommend.active,
+    .open .dropdown-toggle.btn-.btn-recommend {
+        background-color: #6eb006;
+        border-color: #6eb006;
+    }
+    .maprecommend-title {
+        line-height: 30px;
+        text-align: center;
+    }
+    .recom-box-m {
+        max-height: 395px;
+    }
+    .modal-footer {
+        text-align: center !important;
+    }
+    .box-m {
+        height: 165px;
+        margin: 10px 0 10px 0;
+    }
+    .box-m > .circular-img {
+        display: inline-block;
+        position: relative;
+        width: 130px;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .box-m > .circular-img img {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+        margin-left: -30%;
+    }
+    .img-hover:hover {
+        background-color: #fff;
+        opacity: 0.5;
+    }
+    .box-m a {
+        display: block;
+        line-height: 18px;
+    }
+    .box-m a:hover {
+        text-decoration: underline;
+    }
+    .btn-gomap {
+
+        background: #f0eee8 !important;
+        border: 1px solid #cecbc2;
+        color: #000;
+    }
+    /*主頁-燈箱(結束)*/
+    .foodmap .foodmap-select {
+        margin: 0;
+    }
+    .mapshop-select > .col-sm-5 {
+        margin-top: 0;
+    }
+    .mapshop-select .fancy-select {
+        margin: 0 10px 20px 0;
+    }
+    .map-search {
+        width: 100%;
+        text-align: center;
+    }
+    .p-north-m h3,
+    .p-central-m h3,
+    .p-south-m h3,
+    .p-east-m h3,
+    .p-other-m h3 {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .p-north-m a {
+        display: block;
+        font-size: 16.5px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #2588bc !important;
+    }
+    .p-central-m a {
+        display: block;
+        font-size: 16.5px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #e39a00 !important;
+    }
+    .p-south-m a {
+        display: block;
+        font-size: 16.5px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #df5c69 !important;
+    }
+    .p-east-m a {
+        display: block;
+        font-size: 16.5px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #47aa31 !important;
+    }
+    .p-other-m a {
+        display: block;
+        font-size: 16.5px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #a15008 !important;
+    }
+    .p-north-m a:hover,
+    .p-central-m a:hover,
+    .p-south-m a:hover,
+    .p-east-m a:hover,
+    p-other-m a:hover {
+        text-decoration: underline;
+    }
+    .food-img {
+        width: 80%;
+        height: 80%;
+    }
+    .map-point-m {
+        position: relative;
+    }
+    /*北部的點*/
+    .icon-n-1 {
+        position: absolute;
+        top: 78px;
+        left: 161px;
+        cursor: pointer;
+        z-index: 11;
+        display: none;
+    }
+    .icon-n-2 {
+        position: absolute;
+        top: 112px;
+        left: 150px;
+        cursor: pointer;
+        z-index: 12;
+        display: none;
+    }
+    .icon-n-3 {
+        position: absolute;
+        top: 124px;
+        left: 228px;
+        cursor: pointer;
+        z-index: 13;
+        display: none;
+    }
+    .icon-n-4 {
+        position: absolute;
+        top: 22px;
+        left: 247px;
+        z-index: 14;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-5 {
+        position: absolute;
+        top: 108px;
+        left: 104px;
+        z-index: 18;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-6 {
+        position: absolute;
+        top: 78px;
+        left: 119px;
+        z-index: 16;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-7 {
+        position: absolute;
+        top: 113px;
+        left: 190px;
+        z-index: 17;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-8 {
+        position: absolute;
+        top: 83px;
+        left: 234px;
+        z-index: 18;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-9 {
+        position: absolute;
+        top: 44px;
+        left: 145px;
+        z-index: 19;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-10 {
+        position: absolute;
+        top: 79px;
+        left: 199px;
+        z-index: 20;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-11 {
+        position: absolute;
+        top: 48px;
+        left: 225px;
+        z-index: 21;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-12 {
+        position: absolute;
+        top: 38px;
+        left: 183px;
+        z-index: 22;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-n-13 {
+        position: absolute;
+        top: 8px;
+        left: 211px;
+        z-index: 23;
+        cursor: pointer;
+        display: none;
+    }
+    /*中區的點*/
+    .icon-c-1 {
+        position: absolute;
+        top: 177px;
+        left: 89px;
+        z-index: 37;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-2 {
+        position: absolute;
+        top: 203px;
+        left: 72px;
+        z-index: 38;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-3 {
+        position: absolute;
+        top: 241px;
+        left: 76px;
+        z-index: 39;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-4 {
+        position: absolute;
+        top: 137px;
+        left: 77px;
+        z-index: 40;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-5 {
+        position: absolute;
+        top: 163px;
+        left: 167px;
+        z-index: 41;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-6 {
+        position: absolute;
+        top: 158px;
+        left: 129px;
+        z-index: 42;
+        display: none;
+    }
+    .icon-c-7 {
+        position: absolute;
+        top: 271px;
+        left: 45px;
+        z-index: 43;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-8 {
+        position: absolute;
+        top: 215px;
+        left: 111px;
+        z-index: 44;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-9 {
+        position: absolute;
+        top: 232px;
+        left: 37px;
+        z-index: 45;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-10 {
+        position: absolute;
+        top: 193px;
+        left: 140px;
+        z-index: 46;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-11 {
+        position: absolute;
+        top: 227px;
+        left: 150px;
+        z-index: 47;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-12 {
+        position: absolute;
+        top: 255px;
+        left: 136px;
+        z-index: 48;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-c-13 {
+        position: absolute;
+        top: 273px;
+        left: 95px;
+        z-index: 49;
+        cursor: pointer;
+        display: none;
+    }
+    /*南區的點*/
+    .icon-s-1 {
+        position: absolute;
+        top: 362px;
+        left: 76px;
+        z-index: 50;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-2 {
+        position: absolute;
+        top: 313px;
+        left: 103px;
+        z-index: 51;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-3 {
+        position: absolute;
+        top: 343px;
+        left: 34px;
+        z-index: 52;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-4 {
+        position: absolute;
+        top: 417px;
+        left: 79px;
+        z-index: 53;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-5 {
+        position: absolute;
+        top: 442px;
+        left: 107px;
+        z-index: 54;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-6 {
+        position: absolute;
+        top: 302px;
+        left: 5px;
+        z-index: 55;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-7 {
+        position: absolute;
+        top: 392px;
+        left: 104px;
+        z-index: 56;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-8 {
+        position: absolute;
+        top: 305px;
+        left: 40px;
+        z-index: 57;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-9 {
+        position: absolute;
+        top: 326px;
+        left: 70px;
+        z-index: 58;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-10 {
+        position: absolute;
+        top: 355px;
+        left: 115px;
+        z-index: 59;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-11 {
+        position: absolute;
+        top: 291px;
+        left: 118px;
+        z-index: 60;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-12 {
+        position: absolute;
+        top: 390px;
+        left: 49px;
+        z-index: 61;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-s-13 {
+        position: absolute;
+        top: 481px;
+        left: 107px;
+        z-index: 62;
+        cursor: pointer;
+        display: none;
+    }
+    /*東區的點*/
+    .icon-e-1 {
+        position: absolute;
+        top: 253px;
+        left: 182px;
+        z-index: 63;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-2 {
+        position: absolute;
+        top: 201px;
+        left: 221px;
+        z-index: 64;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-3 {
+        position: absolute;
+        top: 289px;
+        left: 162px;
+        z-index: 65;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-4 {
+        position: absolute;
+        top: 340px;
+        left: 156px;
+        z-index: 66;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-5 {
+        position: absolute;
+        top: 172px;
+        left: 220px;
+        z-index: 67;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-6 {
+        position: absolute;
+        top: 197px;
+        left: 177px;
+        z-index: 68;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-7 {
+        position: absolute;
+        top: 315px;
+        left: 178px;
+        z-index: 69;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-8 {
+        position: absolute;
+        top: 392px;
+        left: 139px;
+        z-index: 70;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-9 {
+        position: absolute;
+        top: 229px;
+        left: 202px;
+        z-index: 71;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-10 {
+        position: absolute;
+        top: 143px;
+        left: 199px;
+        z-index: 72;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-11 {
+        position: absolute;
+        top: 285px;
+        left: 200px;
+        z-index: 73;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-12 {
+        position: absolute;
+        top: 313px;
+        left: 145px;
+        z-index: 74;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-e-13 {
+        position: absolute;
+        top: 146px;
+        left: 241px;
+        z-index: 75;
+        cursor: pointer;
+        display: none;
+    }
+    /*其他的點*/
+    .icon-o-1 {
+        position: absolute;
+        top: 577px;
+        left: 173px;
+        z-index: 63;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-2 {
+        position: absolute;
+        top: 605px;
+        left: 112px;
+        z-index: 64;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-3 {
+        position: absolute;
+        top: 623px;
+        left: 147px;
+        z-index: 65;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-4 {
+        position: absolute;
+        top: 637px;
+        left: 105px;
+        z-index: 66;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-5 {
+        position: absolute;
+        top: 582px;
+        left: 77px;
+        z-index: 67;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-6 {
+        position: absolute;
+        top: 540px;
+        left: 135px;
+        z-index: 68;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-7 {
+        position: absolute;
+        top: 616px;
+        left: 71px;
+        z-index: 69;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-8 {
+        position: absolute;
+        top: 549px;
+        left: 93px;
+        z-index: 70;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-9 {
+        position: absolute;
+        top: 575px;
+        left: 134px;
+        z-index: 71;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-10 {
+        position: absolute;
+        top: 527px;
+        left: 164px;
+        z-index: 72;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-11 {
+        position: absolute;
+        top: 652px;
+        left: 45px;
+        z-index: 73;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-12 {
+        position: absolute;
+        top: 661px;
+        left: 82px;
+        z-index: 74;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-o-13 {
+        position: absolute;
+        top: 545px;
+        left: 197px;
+        z-index: 75;
+        cursor: pointer;
+        display: none;
+    }
+    .icon-active {
+        display: block;
+    }
+    .map-point-m {
+        display: block;
+        background-image: url("../../images/bg-map-m.png");
+        width: 300px;
+        height: 700px;
+        margin: auto;
+    }
+    .newsticker-item {
+        width: 100%;
+    }
+    .img-mapnews {
+        background: #fff;
+        box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1);
+        margin: 15px 0;
+    }
+    .img-mapnews div {
+        margin: 10px 0;
+    }
+    .img-mapnews div h5 {
+        display: block;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    /*分頁*/
+    .foodmap-shop {
+        padding: 0;
+        min-width: auto;
+    }
+
+    .map-fb {
+        top: 20px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .bg-map-north {
+	    background-image: none;
+	}
+
+	.bg-map-central {
+	    background-image: none;
+	}
+
+	.bg-map-south {
+	    background-image: none;
+	}
+
+	.bg-map-east {
+	    background-image: none;
+	}
+
+	.bg-map-other {
+	    background-image: none;
+	}
+    .bg-map-north {
+        background-image: none;
+    }
+    .mapshop-left {
+        margin-top: 0;
+    }
+    .map-brand > .map-brandtext p {
+        padding: 0 10px;
+        margin-top: 0;
+    }
+    .map-brand > .map-brandtext span {
+        display: block;
+        font-size: 14.5px;
+        padding: 0 10px;
+    }
+    .map-qty {
+        line-height: 34px;
+    }
+    .map-qty p {
+        margin: 0px;
+    }
+    .map-qty input {
+        width: 54%;
+    }
+    .map-buy a, .map-buy button {
+        width: 95%;
+    }
+    .map-brandtext {
+        padding: 0 10px;
+    }
+    .caption > .map-shopping > .btn {
+        width: 40%;
+        margin-left: 10px;
+    }
+    .mapshop-right {
+        max-height: none;
+    }
+    .mapshop-right {
+        padding: 0;
+        margin: 30px 10px 0 10px;
+    }
+    .btn-active {
+        display: inline-block;
+    }
+    .mapshop-right {
+    	border: none;
+    }
+    .map-select {
+        padding-left: 10px ;
+    }
+    .map-selectqty {
+        width: 50%;
+    }
+    .map-shopping > .map-selectqty {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 359px) {
+    .product-over {
+        padding: 26%;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 411px) {
+    .product-over {
+        padding: 28%;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 767px) {
+    .product-over {
+        padding: 29%;
+    }
+}
+
+
+/* ----- 手機版型 結束 ----- */
+
+
+/*購物車*/
+.right-bar {
+    position: fixed;
+    z-index: 3;
+    right: 0px;
+	top: 50%;
+	background-color: #e9a613;
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+	-o-transform: translate(0%, -50%);
+}
+
+.right-bar .ico {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+}
+
+.right-bar:hover .ico {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.right-bar .Icon {
+    display: block;
+    width: 100%
+}
+
+.right-bar .Icon:hover {
+    background-color: #e9a613;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+.right-bar .priceIcon {
+    line-height: 2em;
+}
+
+.right-bar .priceIcon:hover {
+    background-color: #e9a613;
+}
+
+.right-bar .cartIcon {
+    background-color: #4c4c4c;
+    text-decoration: none;
+}
+
+.right-bar .cartIcon:hover {
+    background-color: #6e6e6e;
+    text-decoration: none;
+}
+.right-bar sup {
+    font-size: 14px;
+}
+
+.label-alert {
+    background: #e50000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 50%;
+    padding: 2px 4px 2px 5px;
+    margin: 0px;
+    font-weight: normal;
+    position: absolute;
+    right: 3px;
+    top: 8px;
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, .2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, .2);
+}
+
+.overlay-fancybox {
+    display: none;
+    background-color: #000;
+    width: 1903px;
+    height: 3000px;
+    opacity: 0.6;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+}
+.overlay-contentbox {
+    display: none;
+    width: 180px;
+    line-height: 90px;
+    background-color: #FFF;
+    text-align: center;
+    z-index: 10001;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -90px;
+    margin-top: -45px;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    z-index: 9998;
+}
+
+.buytext {
+    display:inline-block; 
+    line-height:36px; 
+    margin: 20px 130px 0; 
+    border-bottom: 1px dashed #000;
+}

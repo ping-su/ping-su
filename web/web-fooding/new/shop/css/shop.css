@@ -1,0 +1,1409 @@
+/*========================================================
+             Shop List CSS - 商品列表頁
+=========================================================*/
+
+/*====== 左側-列表 ======*/
+.listmenu {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.listmenu li {
+    list-style: none;
+}
+.listmenu li .menu-link {
+    display: block;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 15px 10px 20px;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.listmenu li:hover .menu-link {
+    color: #ff9000;
+    border-color: #ddd;
+}
+.listmenu li:last-child .menu-link, .listmenu li:last-child .link {
+    border-bottom: 0;
+}
+.listmenu li.open:last-child .menu-link {
+    border-bottom: 1px solid #ddd;
+}
+.listmenu li .menu-link a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.listmenu li.open .menu-link a {
+    color: #ff9000;
+}
+.listmenu li a.link {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 15px 10px 20px;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.listmenu li.active a.link {
+    color: #ff9000;
+}
+.listmenu li i {
+    font-size: 15px;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.listmenu li i.fa-chevron-down {
+    right: 18px;
+    left: auto;
+}
+.listmenu li.open i {
+    color: #ff9000;
+}
+.listmenu li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.listmenu li.default .submenu {
+    display: block;
+}
+.submenu {
+    display: none;
+    padding-left: 0;
+}
+.submenu li {
+    border-bottom: 1px solid #e5e5ef;
+}
+.submenu li a {
+    display: block;
+    text-decoration: none;
+    font-size: 14.5px;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.submenu a:hover {
+    color: #ff9000;
+    background-color: #fff4e8;
+}
+.submenu li.active a {
+    color: #ff9000;
+    background-color: #fff4e8;
+    position: relative;
+}
+.submenu li.active a::after {
+    content: "";
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    bottom: 0;
+    z-index: 1;
+    border: 2px solid #ff9000;
+}
+.listmenu li.open:last-child .submenu li:last-child {
+    border-bottom: 0;
+}
+
+/*====== 右側-商品 ======*/
+.title-shop {
+    margin: 20px 0 15px;
+    position: relative;
+}
+.title-shop h3 {
+    font-size: 20px; 
+    line-height: 36px; 
+    margin-bottom: 0;
+}
+.select-left {
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+}
+.select-left .select {
+    height: auto;
+    font-size: 14.5px;
+    padding: 6px 20px 6px 5px;
+    margin-bottom: 0;
+}
+.active-bg {
+    padding: 5px 10px;
+}
+.col-md-9 .product {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.banner {
+    margin-bottom: 50px; 
+}
+
+/*=============== 手機版 ===============*/
+@media screen and ( max-width:768px) {
+    .breadcrumb {
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .title-shop {
+        margin: 0 -5px 10px;
+    }
+    .banner {
+        margin-top: 15px;
+        margin-bottom: 35px; 
+    }
+}
+
+
+/*========================================================
+             Shop Content CSS - 商品底層頁
+=========================================================*/
+.shopgoods {
+    margin-bottom: 20px;
+}
+
+/*====== 左側-商品照片 ======*/
+.goods-img {
+    margin-top: 20px;
+}
+.goods-img .tab-content {
+    margin-bottom: 5px;
+}
+.goods-img .nav-tabs {
+    border-bottom: none;
+    margin-bottom: 5px;
+}  
+.goods-img .nav-tabs > li > a img {
+    width: 80px;
+    opacity: 0.3;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.goods-img .nav-tabs > li > a {
+    border: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+.goods-img .nav-tabs > li > a:hover, .goods-img .nav-tabs > li > a:active, .goods-img .nav-tabs > li > a:focus {
+    border: 0;
+}
+.goods-img .nav-tabs > li > a:hover img {
+    opacity: 1;
+}
+.goods-img .nav-tabs > li.active > a img {
+    opacity: 1;
+}
+.box-keyword {
+    color: #554646;
+    font-size: 13px;
+    padding: 6px 8px 4px;
+    border: 1px solid #dad5ca;
+    line-height: 40px;
+    border-radius: 4px;
+}
+        
+/*====== 右側-商品內容 ======*/
+.box-shopgoods h2 {
+    color: #281e1e;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.goods-intro {
+    margin-top: 15px;
+}
+
+/*====== 右側-行數收合 ======*/
+.box-shopgoods .desc {
+    margin: 0 auto;
+    max-height: 80px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.descbox p::before {
+    display: inline-block;
+    content: ">";
+    margin-right: 8px;
+}
+.box-shopgoods .btn-more {
+    display: none;
+    color: #554646 !important;
+    background-color: #fff;
+    border: 0;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+.box-shopgoods .btn-more span {
+    font-size: 14.5px;
+}
+.btn-more .less, .btn-more.expand .more {
+    display: none;
+}
+.btn-more.expand .less {
+    display: inline;
+}
+.btn-more:hover {
+    color: #ff9000 !important;
+    box-shadow: none;
+}
+.btn-more:focus {
+    outline: none;
+}
+.goods-shipping {
+    margin-top: 20px;
+}
+.goods-shipping span {
+    color:#f27362;
+}
+.goods-sale {
+    color:#f27362;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.box-shopgoods .saletime {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.box-shopgoods .saletime span {
+    color: #fff; 
+    background-color: #554646; 
+    padding: 3px 5px; 
+    margin-right: 5px;
+}
+.goods-price, .markups-price {
+    display: inline-block;
+    color: #f27362;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.goods-price .strike-price, .markups-price .strike-price {
+    display: inline-block;
+    font-size: 14px;
+    color: #777;
+    text-decoration:line-through;
+    margin-right: 5px;
+}
+
+/*====== 右側-規格選項 ======*/
+.goods-select, .markups-select, .markups-qua {
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.goods-select select, .markups-select select, .markups-qua select {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 6px 12px;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+    background-size: auto auto;
+    background-size: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*====== 右側-數量加減 ======*/
+.goods-select .input-group {
+    margin-bottom: 15px;
+}
+.goods-select .input-group button {
+    height: 40px;
+    padding: 6px 15px;
+}
+.goods-select .input-group .form-control {
+    height: 40px;
+    z-index: 5;
+}
+.goods-select .input-group-addon {
+    color: #554646;
+    background-color: #faf8f4;
+    border-right: 0;
+}
+
+/*====== 右側-加入購物車按鈕 ======*/
+.goods-btn .btn-buy {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 45px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+/*====== 下-加價購 ======*/
+.markups {
+    background-color: #f1f1f1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+}
+.markups .title h3 {
+    display: block; 
+    text-align: center;
+    margin-bottom: 10px;
+}
+.box-markups h2 {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 0;
+}
+.markups-price {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.markups-select select {
+    margin-bottom: 8px;
+}
+.markups-qua select {
+    width: 30%;
+    height: 34px;
+    font-size: 14.5px;
+    text-overflow: ellipsis;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+.markups-qua span {
+    vertical-align: middle;
+}
+.markups-qua .btn-buy {
+    display: inline-block; 
+    width: auto;
+    font-size: 14.5px;
+    padding: 8px 10px; 
+    margin-top: 0; 
+}
+
+/*====== 下-商品特色/規格 ======*/
+.goodtext {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.goodstext .nav-tabs {
+    text-align: center;
+}
+.goodstext .nav-tabs > li {
+    float: none;
+    display: inline-block;
+}
+.goodstext .nav-tabs > li a:hover {
+    background-color: #fff4e8;
+    border-color: #fff4e8;
+    border-bottom-color: #ddd;
+}
+.goodstext .nav-tabs > li.active a {
+    color: #ff9000;
+}
+.goodstext img {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+.goodstext p {
+    line-height: 34px;
+}
+
+/*=============== 平板版 ===============*/
+@media screen and ( max-width:1024px) {
+    .box-markups:first-child {
+        margin-bottom: 35px;
+    }
+}
+
+/*=============== 手機版 ===============*/
+@media screen and ( max-width:768px) { 
+    .shopgoods {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .shopgoods .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .box-shopgoods {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .goods-img {
+        margin-top: 5px;
+    }
+    .goods-img .nav-tabs > li {
+        margin-bottom: 5px;
+    }
+    .goods-img .nav-tabs > li > a img {
+        width: 55px;
+        height: 35px;
+        object-fit: cover;
+    }
+    .box-shopgoods h2 {
+        margin-top: 10px;
+    }
+    .goods-btn .btn-buy {
+        padding: 10px 15px;
+    }
+    .markups {
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+    .box-markups .col-xs-8 {
+        padding-left: 0;
+    }
+    .box-markups h2 {
+        margin-top: 10px;
+    }
+    .markups-qua {
+        margin-top: 10px;
+    }
+    .markups-qua select {
+        font-size: 16px;
+    }
+    .goodstext {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .goodstext .panel, .goodstext .panel .panel-heading {
+        box-shadow: none;
+    }
+    .goodstext .panel {
+        margin-bottom: 15px;
+    }
+    .goodstext .panel .panel-heading {
+        background-color: #faf8f4;
+        padding: 0;
+    }
+    .goodstext .panel .panel-heading a {
+        display: block;
+        font-weight: bold;
+        color: #554646;
+        padding: 13px 15px 10px;
+        background:  url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 1.5rem center;
+        background-size: 8px 10px;
+    }
+}
+
+@media screen and ( max-width:320px) { 
+    .markups-qua select {
+        width: 75%;
+    }
+    .markups-qua .btn-buy {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/*========================================================
+             Shoppingcart CSS - 購物車
+=========================================================*/
+
+.shoppingcart, .shoporder {
+    
+}
+.shoporder .title {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-color: #ff9000;
+}
+.shoporder .title h3 {
+    font-size: 20px;
+    color:#ff9000;
+}
+.box-cart {
+    margin-bottom: 25px;
+}
+.box-cart .company {
+    background-color: #f1f1f1;
+    padding: 12px 15px 10px;
+}
+.box-cart .company p {
+    display:inline-block; 
+    font-size: 17px; 
+    font-weight: bold; 
+    line-height: 28px; 
+    margin-bottom: 0;
+}
+.box-cart .company span {
+    font-size: 12px; 
+    padding-left: 10px;
+}
+.table-header, .table-row, .table-flex {
+    display: flex;
+    align-items: center;
+}
+.table-header, .table-row {
+    padding: 12px 15px 10px;
+}
+.table-header {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc; 
+}
+.table-flex {
+    width: 100%;
+}
+.table-flex-20 {
+    width: 20%;
+}
+.table-flex-60 {
+    width: 60%;
+}
+.table-text {
+    width: 150px;
+    flex-grow: 1;
+    padding-right: 15px;
+}
+.table-text-70 {
+    width: 70%;
+    line-height: 24px;
+}
+.table-text img{
+    display: inline-block;
+    margin-left: 15px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.table-text-50 {
+    width: 50%;
+}
+.table-text-price {
+    font-size: 16px;
+    color: #f27362;
+    font-weight: bold;
+}
+.table-text-price del {
+    font-size: 12px;
+    color: #b3b3b3;
+    padding-right: 5px;
+}
+.table-text .input-group {
+    margin-bottom: 0;
+}
+.table-text .input-group input {
+    text-align: center;
+}
+.table-text .input-group .input-number {
+    z-index: 3;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*====== 小計 ======*/
+.total-text {
+    text-align: right;
+    border-top: 1px solid #554646;
+    padding: 15px 22px;
+}
+.total-text span {
+    padding-left: 15px;
+    font-size: 24px;
+    color: #d9534f;
+    font-weight: bold;
+}
+.total-btn, .subtotal-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.total-btn button, .subtotal-btn button {
+    font-size: 16px;
+    padding: 10px 35px;
+    margin: 0 5px 0 15px;
+}
+
+@media all and (min-width: 1001px) and (max-width: 1200px) {
+    .table-flex-20 {
+        width: 22%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .shoppingcart, .shoporder {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .table-header {
+        display: none;
+    }
+    .table-row {
+        padding: 10px 0;
+    }
+    .table-flex {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .table-flex-20 {
+        width: 300px;
+    }
+    .table-flex-60 {
+        width: 100%;
+    }
+    .table-text {
+        width: 100%;
+        flex-grow: 0;
+        padding-top: 8px;
+        padding-right: 0;
+    }
+    .table-text-70 {
+        font-size: 16.5px;
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .table-text-price {
+        font-size: 18px;
+    }
+    .table-text-price span {
+        font-size: 14.5px;
+        color: #554646;
+        font-weight: 400;
+    }
+    .table-text.text-center {
+        text-align: left;
+    }
+    .table-text-50 {
+        width: 100%;
+    }
+    .box-cart hr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/*=============== 手機版 ===============*/
+@media all and (max-width: 768px) {
+    .shoppingcart, .shoporder {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .table-text img {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+
+/*========================================================
+        Cartstep CSS - 結帳頁步驟1(確認商品與金額)
+=========================================================*/
+
+/*====== 購物車步驟 ======*/
+.cartstep {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cartstep ol {
+    display: inline-block;
+    list-style: none;
+    width: 100%;
+    padding-left: 0;
+}
+.cartstep ol li {
+    float: left;
+    color: #ccc;
+    counter-increment: step;
+    font-size: 16px;
+    width: 25%;
+    font-weight: bold;
+    position: relative;
+}
+.cartstep p {
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.cartstep ol::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.cartstep ol li::before {
+    content: counter(step);
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    line-height: 47px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+.cartstep ol li::after {
+    display: inline-block;
+    width: 100%;
+    content: "";
+    height: 3px;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 22px;
+    z-index: -1;
+}
+.cartstep ol li:last-child::after {
+    display: none;
+}
+.cartstep li.active p {
+    color: #ff9000 ;
+}
+.cartstep ol li.active::before {
+    background-color: #f88631;
+    color: #fff;
+}
+.cartstep ol li.active::after {
+    background-color: #f88631;
+}
+
+/*====== 商品與金額 ======*/
+.box-company {
+    background-color: #474747;
+    padding: 12px 15px 10px;
+}
+.box-company p {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+.box-company a {
+    color: #fff;
+}
+.box-company span {
+    font-size: 12px;
+    color: #fff;
+    padding-left: 10px;
+}
+.box-cart table {
+    width: 100%;
+    border: 2px solid #ddd;
+}
+.box-cart thead tr {
+    border-bottom: 1px solid #ccc;
+}
+.box-cart table th, .box-cart table td {
+    padding: 12px 10px 10px;
+}
+.td-number select {
+    width: 100%;
+    height: 28px;
+}
+.td-spec {
+    width: 12%;
+}
+.td-number {
+    width: 10%;
+}
+.td-price {
+    width: 10%;
+    text-align: right;
+}
+.box-cart tbody tr {
+    border-bottom: 1px dotted #ddd;
+}
+.td-btn {
+    width: 3%;
+}
+.td-btn .btn p {
+    display: none;
+}
+.td-btn .btn i {
+    line-height: 22px;
+}
+.td-img {
+    width: 10%;
+}
+.td-img img {
+    width: 100%; 
+    height: 95px; 
+}
+.td-img button {
+    display: none;
+}
+.td-name {
+    width: 35%;
+}
+.td-name h2 {
+    font-size: 14.5px;
+    line-height: 24px;
+}
+.td-name p {
+    display: inline-block;
+    font-size: 14px;
+    color: #f88631;
+    background-color: #faf8f4;
+    border: 1px solid #faf8f4;
+    padding: 5px;
+}
+.td-subtotal {
+    color: #d9534f;
+    font-weight: bold;
+}
+.tr-addbox {
+    background-color: #f5f5f5;
+}
+.tr-addbox .td-name h2 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.tr-addbox .td-name span {
+    font-size: 13px;
+    color: #fff;
+    border: 1px solid #f88631;
+    background-color: #f88631;
+    padding: 5px 10px;
+}
+.box-cart tfoot td {
+    text-align: right;
+}
+.box-cart tfoot td span {
+    display: inline-block;
+    width: 150px;
+}
+.box-cart tfoot td::before {
+    display: inline-block;
+    content: attr(data-td);
+    text-align: left;
+}
+.box-cart tfoot tr:last-child {
+    font-size: 17px;
+    font-weight: bold;
+    color: #d9534f;
+    background-color: #ddd;
+}
+
+/*====== 訂單總金額＆下一步 ======*/
+.subtotal {
+    margin-bottom: 55px;
+}
+.subtotal .form-inline {
+    margin-bottom: 15px;
+}
+.subtotal .form-inline .form-control {
+    width: 250px;
+}
+.subtotal-price {
+    background-color: #fff8f8;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.subtotal-price p {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 0;
+    margin: 0;
+}
+.subtotal-price p span {
+    display: inline-block;
+    width: 100px;
+    color: #d9534f;
+    font-weight: bold;
+}
+.subtotal-price p:first-child span {
+    width: auto;
+}
+.subtotal-btn {
+    padding-left: 0;
+    padding-right: 0;
+}
+.subtotal-btn button {
+    margin: 0 0 0 15px;
+}
+
+/*====== 注意事項 ======*/
+.cartnotes .title {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-color: #ff9000;
+}
+.cartnotes .title h3 {
+    font-size: 20px;
+    color: #ff9000;
+}
+.cartnotes ul {
+    padding-inline-start: 0;
+    -webkit-padding-start: 0;
+}
+.cartnotes ul li {
+    color: #817070;
+    list-style: none;
+    line-height: 30px;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.cartnotes ul li::before {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #817070;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+.cartnotes ul li strong {
+    color: #4b73d7;
+}
+.cartnotes ul li a {
+    color: #4b73d7;
+    font-weight: bold;
+}
+
+/*=============== 手機版 ===============*/
+@media all and (max-width: 974px) {
+    .cartstep ol li { 
+        padding: 0 10px;
+    }
+    .box-cart thead {
+        display: none;
+    }
+    .box-cart tbody tr {
+        border-bottom: 0;
+    }
+    .box-cart tbody td {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px dotted #ddd;
+    }
+    .td-spec {
+        border-top: 1px dotted #ddd;
+    }
+    .td-number {
+        line-height: 28px;
+    }
+    .td-number select {
+        width: 100px;
+    }
+    .box-cart tbody td.td-btn {
+        justify-content: flex-end;
+    }
+    .td-btn .btn { 
+        border-radius: 3px;
+        width: 75px;
+        height: 32px;
+        line-height: 32px;
+    }
+    .td-btn .btn p {
+        display: block;
+        color: #fff;
+        margin: 0;
+    }
+    .td-btn .btn i {
+        display: none;
+    }
+    .tr-addbox .td-name h2 {
+        font-size: 16px;
+    }
+    .tr-addbox .td-name h2 a {
+        vertical-align: middle;
+    }
+    .box-cart tbody td.td-img {
+        display: inline-block;
+        width: 30%;
+        border-bottom: 0;
+        float: left;
+    }
+    .box-cart tbody td.td-name {
+        display: inline-block;
+        width: 70%;
+        border-bottom: 0;
+        float: left;
+        padding-left: 10px;
+    }
+    .td-img img{
+        width: 100%;
+        height: auto;
+    }
+    .td-img button {
+        display: inline-block;
+        width: 100%;
+        border-color: #da5948;
+        background-color: #f27362;
+        margin-top: 5px;
+    }
+    .td-price, .td-name h2 {
+        margin-top: 0;
+    }
+    .box-cart tbody td::before {
+        display: inline-block;
+        width: 150px;
+        content: attr(data-th);
+        text-align: left;
+    }
+    .box-cart tbody td.td-btn::before, .box-cart tbody td.td-img::before, .box-cart tbody td.td-name::before {
+        display: none;
+    }
+    .box-cart tbody td.td-subtotal {
+        color: #d9534f;
+        font-weight: bold;
+        border-bottom: 3px solid #ddd;
+    }
+    .box-giftcart tbody tr:last-child td.td-subtotal {
+        border-bottom: 1px solid #ddd;
+    }
+    .box-cart tbody .tr-addbox td.td-name {
+        width: 100%;
+    }
+    .box-cart tfoot td {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px dotted #ddd;
+    }
+    .box-cart tfoot tr:last-child td {
+        border-bottom: 0;
+    }
+    .box-cart tfoot td::before { 
+        width: 100%;
+    }
+    /*====== 訂單總金額＆下一步 ======*/
+    .subtotal {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .subtotal .form-inline {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    .subtotal .form-inline .form-group {
+        width: 0;
+        flex-basis: 70%;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    .subtotal .form-inline button {
+        width: 0;
+        flex-basis: 30%;
+    }
+    .subtotal .form-group label {
+        display: none;
+    }
+    .subtotal .form-group .form-control {
+        width: 100%;
+    }
+    .cartnotes {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .total-btn button, .subtotal-btn button {
+        padding: 10px 22px;
+    }
+    .subtotal .form-inline .form-group {
+        flex-basis: 60%;
+    }
+    .subtotal .form-inline button {
+        flex-basis: 40%;
+    }
+}
+
+
+/*========================================================
+        Cartstep CSS - 結帳頁步驟2(確認送貨地址)
+=========================================================*/
+
+/*====== 會員資料 ======*/
+.title-form {
+    border-color: #f5a569;
+}
+.title-form h3 {
+    color: #ff9000 ;
+}
+.title-form p {
+    display: inline-block;
+    color: #554646;
+    font-size: 16px;
+    font-weight: 400;
+}
+.title-form span {
+    color: #ff0000;
+    vertical-align: top;
+}
+.profile {
+    margin-bottom: 55px;
+}
+.profile .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.profile .control-label {
+    padding-top: 5px;
+}
+.radio.radio.radiobox {
+    padding-top: 0;
+    margin-bottom: 15px;
+}
+.user-region {
+    margin-bottom: 15px;
+}
+.radio label, .radio-inline label, .checkbox label, .checkbox-inline label {
+    vertical-align: middle;
+}
+.form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+    line-height: initial;
+}
+button.btn-order-buy {
+    font-size: 16px;
+    padding: 10px 35px;
+    margin-bottom: 25px;
+}
+.form-group p {
+    margin: 8px 0 0;
+}
+.text-required {
+    color: #ff0000;
+}
+.orderform .modal .modal-body {
+    margin-top: 15px;
+}
+.orderform .modal .modal-content, .orderform .modal .modal-footer {
+    text-align: center;
+}
+.orderform .modal .modal-footer button {
+    color: #fff;
+}
+
+/*====== 收貨資料 ======*/
+.title-form button {
+    float: right;
+    padding: 3px 5px 3px;
+}
+.agreement input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+}
+.agreement {
+    border-radius: 5px;
+    background-color: #fff8f8;
+    border: 1px solid #ffecec;
+    line-height: initial;
+    padding: 15px 25px !important;
+}
+.agreement label {
+    font-size: 16px;
+    font-weight: bold;
+}
+.neces::before {
+    content: "＊";
+    display: inline-block;
+    color: #ff0000;
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: initial;
+} 
+.agreement p {
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+
+/*====== 發票資料 ======*/
+.panel-invoice {
+    border-bottom: 1px solid #ddd;
+}
+.panel-invoice .panel {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 15px;
+}
+.panel-invoice .panel > .panel-heading {
+    background-color: #fff;
+    border: 0;
+    color: #554646;
+}
+.panel-invoice .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.panel input[type="radio"] {
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+    appearance: radio;
+}    
+.panel input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+} 
+.panel .radio, .panel .checkbox {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.panel .radio-inline, .panel .checkbox-inline {
+    line-height: initial;
+}
+.panel-heading .panel-title label {
+    font-weight: bold;
+}
+.panel-body .row {
+    margin-bottom: 10px;
+}
+.check-return {
+    padding: 10px 22px;
+}
+.check-return label {
+    font-size: 13px;
+    color: #959595;
+    line-height: 24px;
+    cursor: default;
+}
+.panel-body .link-des {
+    color: #959595;
+    margin-top: 8px;
+}
+.panel-body .link-des a {
+    
+}
+
+/*=============== 手機版 ===============*/
+@media all and (max-width: 768px) {
+    .orderform {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .neces::before {
+        text-indent: -18px;
+    }
+}
+
+
+/*========================================================
+            Cartstep CSS - 結帳頁步驟4(訂單完成)
+=========================================================*/
+
+/*====== 訂單帳號 ======*/
+.cartaccount .title {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-color: #ff9000;
+}
+.cartaccount .title h3 {
+    font-size: 20px;
+    color:#ff9000;
+}
+.cartaccount span {
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/*====== 訂單明細 ======*/
+.shoporder.completed .td-name {
+    width: 40%;
+}
+.shoporder.completed .td-number {
+    width: 5%;
+    text-align: center;
+}
+
+/*====== 收貨人+ATM付款資訊 ======*/
+.receipt, .atminfo{
+    margin-bottom: 55px;
+}
+.receipt .title, .atminfo .title {
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-color: #ff9000;
+}
+.receipt .title h3, .atminfo .title h3 {
+    font-size: 20px;
+    color: #ff9000;
+}
+.box-receipt table, .atminfo table {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.box-receipt thead tr, .atminfo thead tr {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+}
+.box-receipt table th, .box-receipt table td, .atminfo table th, .atminfo table td {
+    padding: 12px 10px 10px;
+}
+.box-receipt table th, .box-receipt table td {
+    width: 25%;
+}
+.box-receipt .td-add {
+    width: 50%;
+}
+.box-receipt p, .box-atminfo p {
+    color: #d9534f;
+    font-weight: bold;
+    line-height: 30px;
+}
+.box-receipt p span, .box-atminfo p span {
+    display: inline-block;
+    color: #fff;
+    background-color: #d9534f;
+    padding: 0 6px;
+    margin-right: 5px;
+}
+.box-atminfo table th, .box-atminfo table td {
+    width: 33.333%;
+}
+
+/*=============== 手機版 ===============*/
+@media all and (max-width: 974px) {
+    .cartaccount {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .receipt, .atminfo{
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .shoporder.completed .td-name {
+        width: 70%;
+    }
+    .shoporder.completed .td-number {
+        width: 100%;
+    }
+}
