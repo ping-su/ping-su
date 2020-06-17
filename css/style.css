@@ -119,9 +119,9 @@ header {
 }
 .txtbox h1 span {
 	display: block;
-	font-size: 28px;
+	font-size: 22px;
 	font-weight: 500;
-	padding: 10px 0;
+	padding: 15px 0;
 }
 .txtbox p {
 	font-size: 20px;
