@@ -130,7 +130,7 @@ header {
 	z-index: 10;
 }
 .portfolio .nav-tabs {
-	/*display: flex;*/
+	display: flex;
 	justify-content: center;
 	width: 100%;
 	padding-inline-start: 0;
@@ -182,13 +182,14 @@ header {
 	text-align: center;
 }
 .item-box {
-	display: flex;
+	display: block;
 	flex-wrap: wrap;
 	align-content: flex-start;
 	justify-content: space-between;
 }
 .item {
-	width: 0;
+	width: 100%;
+	/*width: 0;*/
 	flex-basis: 100%;
 	margin-bottom: 35px;
 	position: relative;
