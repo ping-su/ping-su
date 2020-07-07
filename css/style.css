@@ -49,10 +49,8 @@ h2:after {
 ======================================================== */
 header {
 	width: 100%;
-	height: 550px;
 	position: relative;
 	margin-bottom: 55px;
-	overflow: hidden;
 }
 .txtbox {
 	width: 80%;
@@ -117,13 +115,6 @@ header {
 	.txtbox p {
 		font-size: 20px;
 		padding: 0;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	header {
-		height: 100vh;
-		min-height: 600px;
 	}
 }
 
