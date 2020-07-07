@@ -130,7 +130,7 @@ header {
 	z-index: 10;
 }
 .portfolio .nav-tabs {
-	display: flex;
+	/*display: flex;*/
 	justify-content: center;
 	width: 100%;
 	padding-inline-start: 0;
