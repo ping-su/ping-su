@@ -144,7 +144,7 @@ header {
 	border: 1px solid #ddd;
 	border-radius: 5px;
     margin-bottom: 10px;
-    position: relative;
+    /*position: relative;*/
 }
 .item-img img {
 	width: 100%;
@@ -169,7 +169,7 @@ header {
     top: 8px;
     right: -10px;
 }
-.item span::after {
+/*.item span::after {
 	content: "";
     border-color: #106a92 transparent transparent transparent;
     border-style: solid;
@@ -179,7 +179,7 @@ header {
 	position: absolute;
     bottom: -8px;
     right: 0;
-}
+}*/
 /*.portfolio {
 	position: relative;
 	z-index: 10;
