@@ -135,7 +135,7 @@ header {
 }
 .item {
 	width: 0;
-	flex-basis: 33.333333%;
+	flex-basis: 100%;
 	padding: 0 20px;
 	margin-bottom: 35px; 
 	position: relative;
@@ -168,6 +168,11 @@ header {
 	position: absolute;
     top: 8px;
     right: -10px;
+}
+@media screen and (min-width: 768px) {
+	.item {
+		flex-basis: 33.333333%;
+	}
 }
 /*.item span::after {
 	content: "";
