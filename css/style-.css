@@ -138,13 +138,13 @@ header {
 	flex-basis: 33.333333%;
 	padding: 0 20px;
 	margin-bottom: 35px; 
+	position: relative;
 }
 .item-img {
 	cursor: pointer;
 	border: 1px solid #ddd;
 	border-radius: 5px;
     margin-bottom: 10px;
-    position: relative;
 }
 .item-img img {
 	width: 100%;
