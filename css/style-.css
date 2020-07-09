@@ -135,18 +135,50 @@ header {
 }
 .item {
 	width: 0;
-	flex-basis: 30.333333%;
-	padding: 0 15px; 
+	flex-basis: 33.333333%;
+	padding: 0 20px;
+	margin-bottom: 35px; 
 }
 .item-img {
 	cursor: pointer;
 	border: 1px solid #ddd;
 	border-radius: 5px;
     margin-bottom: 10px;
+    position: relative;
 }
 .item-img img {
 	width: 100%;
 	vertical-align: middle;
+}
+.item p {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.item span {
+    font-family: 'Rubik', Arial, sans-serif;
+    font-size: 14.5px;
+    color: #fff;
+    line-height: 16px;
+    letter-spacing: 1px;
+    background-color: #00a0e6;
+    padding: 6px 8px;
+	position: absolute;
+    top: 8px;
+    right: -10px;
+}
+.item span::after {
+	content: "";
+    border-color: #106a92 transparent transparent transparent;
+    border-style: solid;
+    border-width: 8px 10px 0 0;
+    height: 0;
+    width: 0;
+	position: absolute;
+    bottom: -8px;
+    right: 0;
 }
 /*.portfolio {
 	position: relative;
