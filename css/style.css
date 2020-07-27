@@ -371,6 +371,8 @@ header {
 .about-txt .skill-item {
 	color: #444;
 	margin-bottom: 10px;
+	padding-left: 20px;
+	text-indent: -20px;
 }
 .skill-item::before {
 	content: "";
@@ -379,12 +381,13 @@ header {
 	height: 8px;
 	border-radius: 50%;
 	background-color: #444;
-	margin-right: 10px;
+	margin-right: 8px;
 }
 .skill-item p {
 	font-size: 16px;
 	color: #858585;
-	padding: 5px 0 0 20px;
+	text-indent: 0;
+	padding-top: 5px;
 	margin: 0;
 }
 
