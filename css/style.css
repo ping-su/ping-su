@@ -414,9 +414,6 @@ header {
 	.infor .infor-txt {
 	    flex-basis: auto;
 	}
-	.infor .infor-txt:last-child {
-		margin-left: 35px;
-	}
 }
 
 
