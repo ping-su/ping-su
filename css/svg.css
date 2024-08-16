@@ -1,0 +1,258 @@
+.svgbox {
+	height: 550px;
+	overflow:hidden; 
+	position: relative;
+}
+.svgbox::after {
+	content: "";
+	width: 100%;
+	height: 25px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(90deg, #3cbe9b 30%, #00a0eb);
+	z-index: 9;
+}
+
+@media screen and (min-width: 1200px) {
+	.svgbox {
+		height: 100vh;
+		min-height: 600px;
+	}
+}
+
+.link {
+	width: 40px;
+	height: 40px;
+	font-size: 0;
+	border-radius: 50%;
+	background-color: #000;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5px;
+	margin: auto;
+	z-index: 10;
+}
+.link-svg {
+    position: relative;
+}
+.link-svg svg {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+svg.circle-l {
+	width: 30%;
+}
+.circle-l circle {
+	-webkit-animation: cl 5s alternate infinite;
+	animation: cl 5s alternate infinite;
+}
+@keyframes cl {
+	0% { 
+		-webkit-transform: translate(0, -3%);
+		transform: translate(0, -3%);
+	}
+	50% { 
+   		-webkit-transform: translate(0, 5%);
+   		transform: translate(0, 5%);
+   }
+	100%{ 
+   		-webkit-transform: translate(0, 1%);
+   		transform: translate(0, 1%);
+   }
+}
+svg.s-circle-l {
+	width: 65%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 0.35;
+	-webkit-animation: scl 8s alternate infinite;
+	animation: scl 8s alternate infinite;
+}
+@keyframes scl {
+	0% { 
+		-webkit-transform: translate(-80%, -50%);
+		transform: translate(-80%, -50%);
+	}
+	50% { 
+   		-webkit-transform: translate(-65%, -35%);
+   		transform: translate(-65%, -35%);
+   }
+	100%{ 
+   		-webkit-transform: translate(-50%, -20%);
+   		transform: translate(-50%, -20%);
+   }
+}
+svg.d-circle-l {
+	width: 10%;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+	z-index: 3;
+	opacity: .55;
+	-webkit-animation: dcl 5s alternate infinite;
+	animation: dcl 5s alternate infinite;
+}
+@keyframes dcl {
+	0% { 
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+	50% { 
+   		-webkit-transform: translate(0, -15%);
+   		transform: translate(0, -15%);
+   }
+	100%{ 
+   		-webkit-transform: translate(0, -5%);
+   		transform: translate(0, -5%);
+   }
+}
+svg.h-circle {
+	width: 20%;
+	position: absolute;
+	top: -30%;
+	left: 30%;
+	opacity: .5;
+}
+svg.b-circle {
+	width: 65%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: .1;
+	z-index: -1;
+}
+svg.circle-r {
+	width: 30%;
+	position: absolute;
+	right: -15%;
+}
+.circle-r circle {
+	-webkit-animation: cr 5s alternate infinite;
+	animation: cr 5s alternate infinite ;
+}
+@keyframes cr {
+	0% { 
+		-webkit-transform: translate(0, 1%);
+		transform: translate(0, 1%);
+	}
+	50% { 
+   		-webkit-transform: translate(0, -3%);
+   		transform: translate(0, -3%);
+   }
+	100%{ 
+   		-webkit-transform: translate(0, 5%);
+   		transform: translate(0, 5%);
+   }
+}
+svg.s-circle-r {
+	width: 65%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	opacity: 0.35;
+	-webkit-animation: scr 8s alternate infinite;
+	animation: scr 8s alternate infinite;
+	z-index: 3;
+}
+@keyframes scr {
+	0% { 
+		-webkit-transform: translate(100%, 100%);
+		transform: translate(100%, 100%);
+	}
+	50% { 
+   		-webkit-transform: translate(65%, 65%);
+   		transform: translate(65%, 65%);
+   }
+	100%{ 
+   		-webkit-transform: translate(75%, 35%);
+   		transform: translate(75%, 35%);
+   }
+}
+svg.d-circle-r {
+	width: 10%;
+	position: absolute;
+	top: 0;
+	right: 10%;
+	z-index: 6;
+	opacity: .55;
+	-webkit-animation: dcr 20s alternate infinite;
+	animation: dcr 20s alternate infinite;
+}
+@keyframes dcr {
+	0% { 
+		-webkit-transform: translate(0, -100%);
+		transform: translate(0, -100%);
+	}
+	50% { 
+   		-webkit-transform: translate(0, 30%);
+   		transform: translate(0, 30%);
+   }
+	100%{ 
+   		-webkit-transform: translate(0, 100%);
+   		transform: translate(0, 100%);
+   }
+}
+svg.cylinder {
+	width: 25%;
+	position: absolute;
+	top: 5%;
+	right: 12%;
+	z-index: 5;
+	opacity: 0.8;
+	-webkit-animation: iio 3s alternate infinite;
+	animation: iio 3s alternate infinite;
+}
+@keyframes iio {
+	0% { 
+		-webkit-transform:translate(0, 0);
+		transform: translate(0, 0);
+	}
+	100%{ 
+   		-webkit-transform: translate(0, 5%);
+   		transform: translate(0, 5%);
+   }
+}
+
+@media screen and (max-width: 767px) {
+	svg.d-circle-l, svg.circle-r, svg.s-circle-r, svg.d-circle-r {
+	    display: none;
+	}
+	svg.circle-l {
+	    width: 50%;
+	    position: absolute;
+		left: -23%;
+	}
+	svg.s-circle-l {
+		width: 45%;
+	}
+	svg.h-circle {
+	    width: 45%;
+		left: initial;
+		right: 0;
+		top: -25%;
+	}
+	svg.b-circle {
+		width: 80%;
+	}
+	svg.b-circle #bc {
+	    transform: translateY(-150px);
+	}
+	svg.cylinder {
+		width: 55%;
+		top: 15%;
+		right: -25%;
+	}
+}
