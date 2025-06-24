@@ -1,5 +1,5 @@
 body {
-	font-size: 18px;
+	font-size: 16px;
     font-family: 'Quicksand', '微軟正黑體', Arial, sans-serif;
     color: #000;
     line-height: 24px;
@@ -316,7 +316,7 @@ header {
 }
 .about-txt .intro {
 	color: #444;
-	line-height: 32px;
+	line-height: 28px;
 	margin-bottom: 26px;
 }
 .about-txt .info {
@@ -362,10 +362,9 @@ header {
 	margin-right: 10px;
 }
 .about-txt h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    text-decoration: underline;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 .about-txt .skill {
 	margin-bottom: 32px;
@@ -376,26 +375,10 @@ header {
 	padding-left: 20px;
 	text-indent: -20px;
 }
-.skill-item::before {
-	content: "";
-	display: inline-block;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background-color: #444;
-	margin-right: 8px;
-}
-.skill-item p {
-	font-size: 16px;
-	color: #858585;
-	text-indent: 0;
-	padding-top: 5px;
-	margin: 0;
-}
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
 	.about-content {
-		width: 1000px;
+		width: 880px;
 	}
 }
 
