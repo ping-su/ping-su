@@ -390,9 +390,9 @@ header {
 		flex-basis: 25%;
 		margin: 0;
 	}
-	.about-txt {
+	/* .about-txt {
 	    flex-basis: 75%;
-	}
+	} */
 	.about-txt .infor {
 		flex-wrap: nowrap;
 	}
